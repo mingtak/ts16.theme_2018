@@ -5,7 +5,7 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
-    <!--
+    
     You can include this rules file in your own theme as follows:
 
     <rules xmlns="http://namespaces.plone.org/diazo"
@@ -22,7 +22,7 @@
 
     This will include the toolbar in your theme and use Barceloneta to theme
     all your backend pages such as site setup and edit.
-    -->
+    
 
     <!-- Toolbar -->
     <!-- Commented out by default, if you are using backend.xml you should only

@@ -1,0 +1,88 @@
+<tal:sections
+     xmlns:tal="http://xml.zope.org/namespaces/tal"
+     xmlns:metal="http://xml.zope.org/namespaces/metal"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     tal:define="portal_tabs view/portal_tabs"
+     tal:condition="portal_tabs"
+     i18n:domain="plone">
+
+  <p class="hiddenStructure" i18n:translate="heading_sections">Navigation</p>
+  <nav class="plone-navbar" id="portal-globalnav-wrapper">
+    <div class="container">
+      <div class="plone-navbar-header">
+        <button type="button" class="plone-navbar-toggle" data-toggle="collapse" data-target="#portal-globalnav-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="plone-collapse plone-navbar-collapse" id="portal-globalnav-collapse">
+
+<?python
+from plone import api
+lang = api.portal.get_current_language()
+?>
+
+<tal:lang switch="lang">
+
+      <ul class="nav" id="portal-globalnav" tal:case="string:zh-tw">
+              <li class="dropdown active"> <a href="/ts16/++theme++artaward16/index.html" class="dropdown-toggle" data-toggle="dropdown"><img src="/ts16/++theme++artaward16/images/logo/30Taishin.png"></a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">最新消息</span></a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">入圍作品</span></a>
+           <ul class="dropdown-menu">
+                  <li><a href="#">全部</a></li>
+                  <li><a href="#">表演藝術</a></li>
+                  <li><a href="#">視覺藝術</a></li>
+                  <li><a href="#">藝冠榜</a></li>
+                </ul>
+                </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">文件展</span></a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">國際決審會客室</span></a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">關於台新藝術獎</span></a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">我心目中的得主</span></a></li>
+              
+           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">選擇語系</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">中文 TW</a></li>
+                  <li><a href="#">英文 EN</a></li>
+                </ul>
+              </li>
+        </ul>
+
+
+
+
+
+      <ul class="nav" id="portal-globalnav" tal:case="string:en-us">
+              <li class="dropdown active"> <a href="/ts16/++theme++artaward16/index.html" class="dropdown-toggle" data-toggle="dropdown"><img src="/ts16/++theme++artaward16/images/logo/30Taishin.png"></a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">最新消息(en)</span></a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">入圍作品</span></a>
+           <ul class="dropdown-menu">
+                  <li><a href="#">全部</a></li>
+                  <li><a href="#">表演藝術</a></li>
+                  <li><a href="#">視覺藝術</a></li>
+                  <li><a href="#">藝冠榜</a></li>
+                </ul>
+                </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">文件展</span></a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">國際決審會客室</span></a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">關於台新藝術獎</span></a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">我心目中的得主</span></a></li>
+              
+           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">選擇語系</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">中文 TW</a></li>
+                  <li><a href="#">英文 EN</a></li>
+                </ul>
+              </li>
+      </ul>
+
+</tal:lang>
+
+      </div>
+    </div>
+  </nav>
+
+</tal:sections>

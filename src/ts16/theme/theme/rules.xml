@@ -5,6 +5,12 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
+<xi:include href="backend.xml" />
+
+
+<!-- Only theme front end pages -->
+<rules css:if-content="body.frontend#visual-portal-wrapper">
+
   <theme href="index.html" />
   <notheme css:if-not-content="#visual-portal-wrapper" />
 
@@ -12,27 +18,42 @@
     <!-- Attributes -->
     <copy attributes="*" css:theme="html" css:content="html" />
     <!-- Base tag -->
-    <before css:theme="title" css:content="base" />
+<!--    <before css:theme="title" css:content="base" /> -->
     <!-- Title -->
     <replace css:theme="title" css:content="title" />
     <!-- Pull in Plone Meta -->
     <after css:theme-children="head" css:content="head meta" />
+
     <!-- Don't use Plone icons, use the theme's -->
     <drop css:content="head link[rel='apple-touch-icon']" />
     <drop css:content="head link[rel='shortcut icon']" />
+
     <!-- drop the theme stylesheets -->
-    <drop theme="/html/head/link[rel='stylesheet']" />
+<!--    <drop theme="/html/head/link[rel='stylesheet']" /> -->
+
     <!-- CSS -->
-    <after css:theme-children="head" css:content="head link" />
+<!--    <after css:theme-children="head" css:content="head link" /> -->
+
     <!-- Script -->
-    <after css:theme-children="head" css:content="head script" />
+<!--    <after css:theme-children="head" css:content="head script" /> -->
   </rules>
 
   <!-- Copy over the id/class attributes on the body tag. This is important for per-section styling -->
   <copy attributes="*" css:content="body" css:theme="body" />
 
+  <!-- logo -->
+  <replace css:theme="a.main-logo" css:content="a#portal-logo" />
+
   <!-- move global nav -->
-  <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
+  <replace css:theme-children="ul.nav" css:content-children="#portal-globalnav" /> <!-- method="raw" /> -->
+
+
+
+
+
+
+
+
 
   <!-- full-width breadcrumb -->
   <replace css:content="#viewlet-above-content" css:theme="#above-content" />
@@ -99,4 +120,13 @@
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" />
 
+
+
+  <!-- drop from from front end -->
+  <drop css:content="#edit-zone" />
+
+  <!-- drop from theme file -->
+  <drop css:theme="#loader" css:if-not-content="body.template-cover_view"/>
+
+</rules>
 </rules>
