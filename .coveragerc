@@ -1,0 +1,6 @@
+[report]
+include =
+    src/ts16/*
+omit =
+    */test*
+    */upgrades/*
