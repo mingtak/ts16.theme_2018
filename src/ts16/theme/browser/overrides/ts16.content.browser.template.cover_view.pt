@@ -16,9 +16,59 @@
 <metal:content-core fill-slot="content-core">
 <metal:block define-macro="content-core">
 
+<!-- section-1 start -->
+<section id="section-1">
+    <section class="about-ser pad-t-b-130">
+      <div class="container">
+        <!-- Heading -->
+        <div class="heading-block margin-bottom-20">
+          <a name="aaa"></a><h2><span style="font-family:微軟正黑體">最新消息</span></h2><br>
+          <h4>- NEWS - </h4><br><br>
+        </div>
+        <div class="row">
+          <!-- Our Mission -->
+          <div class="col-sm-12">
+            <article>
+              <tal:item repeat="item view/getNews">
+                <h3 style="font-family:微軟正黑體" class="${python:'more' if repeat['item'].index > 2 else ''}">
+                  <span>${python:item.created.strftime('%Y.%m.%d')}</span>　
+                  <a href="${item/getURL}">${item/Title}</a>
+                </h3>
+                <br class="${python:'more' if repeat['item'].index > 2 else ''}">
+              </tal:item>
+              <p></p>
+              <a href="javascript:void(0)" class="read-more-news">Read More</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+</section>
+
+<section class="section-js">
+  <script>
+    $(document).ready(function(){
+      $('h3.more, br.more').hide()
+
+      $('.read-more-news').click(function(){
+        $('h3.more, br.more').slideToggle()
+        text = $(this).text()
+        if(text == 'Read More'){
+            $(this).text('Read Less')
+        }else{
+            $(this).text('Read More')
+        }
+      })
+    })
+  </script>
+</section>
+<!-- section-1 end -->
 
 
-override cover
+
+
+
+
 
 </metal:block>
 </metal:content-core>

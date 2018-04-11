@@ -49,9 +49,31 @@
 
 
 
+  <!-- home slider -->
 
+  <!-- content-core section#section-1-->
+  <replace css:theme-children="div#content"
+           css:content-children="section#section-1" />
 
+  <!-- content-core section#section-2 -->
+  <replace css:theme-children="section.our-main-ser.pad-t-b-130.padding-bottom-90"
+           css:content-children="section#section-2" />
 
+  <!-- content-core section#section-3-->
+  <replace css:theme-children="section.portfolio.port-wrap.pad-t-b-130"
+           css:content-children="section#section-3" />
+
+  <!-- content-core section#section-4-->
+  <replace css:theme-children="section.new-main.pad-t-b-130"
+           css:content-children="section#section-4" />
+
+  <!-- content-core section#section-5-->
+  <replace css:theme-children="section.client-sec"
+           css:content-children="section#section-5" />
+
+  <!-- content-core section.section-js-->
+  <after css:theme-children="body"
+         css:content-children="section.section-js" />
 
 
 
