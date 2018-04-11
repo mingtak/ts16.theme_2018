@@ -65,7 +65,53 @@
 <!-- section-1 end -->
 
 
+<!-- section-2 start -->
+<section id="section-2">
+    <section class="portfolio port-wrap pad-t-b-130">
+      <div class="container">
+        <!-- Heading -->
+        <div class="heading-block margin-bottom-30">
+          <h3><span style="font-family:微軟正黑體">入圍作品</span></h3>
+          <hr>
+        </div>
 
+        <!-- PORTOFLIO ITEMS FILTER -->
+        <ul class="portfolio-filter">
+          <li><a class="active" href="#." data-filter="*">All</a></li>
+          <li><a href="#." data-filter=".表演藝術"><span style="font-family:微軟正黑體">表演藝術</span></a></li>
+          <li><a href="#." data-filter=".視覺藝術"><span style="font-family:微軟正黑體">視覺藝術</span></a></li>
+          <li><a href="#." data-filter=".藝冠榜"><span style="font-family:微軟正黑體">藝冠榜</span></a></li>
+        </ul>
+
+        <!-- Item Start -->
+        <div class="items with-space col-3 popup-gallery">
+          <!-- ITEM -->
+<?python
+import random
+brain = list(view.getAward())
+random.shuffle(brain)
+?>
+
+<tal:item repeat="item brain">
+          <div class="cbp-item portfolio-item ${python:item.Subject[0]}">
+            <article>
+              <div class="portfolio-image"> <img alt="${item/Title}" src="${item/getURL}/@@images/image/large">
+                  <div class="portfolio-overlay"></div>
+                <div class="position-bottom">
+                    <h4><a href="${item/getURL}">${item/Title}</a></h4>
+                  <p>${python:item.Subject[0]}</p>
+                </div>
+              </div>
+            </article>
+          </div>
+</tal:item>
+        </div>
+        <!-- LOAD MORE -->
+        <div class="text-center margin-top-50 animate fadeInUp" data-wow-delay="0.4s"> <a href="portfolio_1-4-col.html" class="btn btn-inverse">READ MORE</a> </div>
+      </div>
+    </section>
+</section>
+<!-- section-2 end -->
 
 
 
