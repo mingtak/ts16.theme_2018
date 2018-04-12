@@ -11,6 +11,7 @@
 <metal:content-core define-macro="content-core"
                     tal:define="toc context/table_of_contents|nothing;">
 
+
 <?python
 from plone import api
 portal = api.portal.get()
@@ -21,7 +22,7 @@ lang = api.portal.get_current_language()
     <div class="position-center-center">
       <div class="container">
         <h4>${context/title}</h4>
-        
+
         <!-- Breadcrumb -->
         <ol class="breadcrumb">
           <li><a href="${portal/absolute_url}/${lang}"><img src="${portal/absolute_url}/++theme++artaward16/images/logo/30Taishin.png"></a></li>
@@ -32,15 +33,13 @@ lang = api.portal.get_current_language()
     </div>
   </section>
 
-
-
 <section id="section-1">
 
     <!--======= PAGES INNER =========-->
 
     <section class="item-detail-page pad-t-b-130">
       <div class="container">
-        <div class="row"> 
+        <div class="row">
 
   <div id="parent-fieldname-text"
       tal:condition="context/text"

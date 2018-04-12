@@ -50,7 +50,8 @@
 
 
 
-  <!-- home slider -->
+  <!-- home slider / page banner(#path-section) -->
+  <after css:theme="body header.header" css:content="section#path-section" />
 
   <!-- content-core section#section-1-->
   <replace css:theme-children="div#content"

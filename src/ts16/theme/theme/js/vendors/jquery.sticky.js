@@ -119,10 +119,13 @@ $(window).scroll(function(){
 //smooth scroll to top
 $back_to_top.on('click', function(event){
 	event.preventDefault();
+location.href = "/ts16/zh-tw#for-this-section";
+/* 改為前往心目中的得主
 	$('body,html').animate({
 		scrollTop: 0 ,
 	 	}, scroll_top_duration
 );
+*/
 });
 
 /*-----------------------------------------------------------------------------------*/
