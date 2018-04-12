@@ -18,6 +18,8 @@
 
 <!-- section-1 start -->
 <section id="section-1">
+
+    <!-- 最新消息 -->
     <section class="about-ser pad-t-b-130">
       <div class="container">
         <!-- Heading -->
@@ -43,30 +45,8 @@
         </div>
       </div>
     </section>
-</section>
 
-<section class="section-js">
-  <script>
-    $(document).ready(function(){
-      $('h3.more, br.more').hide()
-
-      $('.read-more-news').click(function(){
-        $('h3.more, br.more').slideToggle()
-        text = $(this).text()
-        if(text == 'Read More'){
-            $(this).text('Read Less')
-        }else{
-            $(this).text('Read More')
-        }
-      })
-    })
-  </script>
-</section>
-<!-- section-1 end -->
-
-
-<!-- section-2 start -->
-<section id="section-2">
+    <!-- 入圍作品 -->
     <section class="portfolio port-wrap pad-t-b-130" id="section-2-head">
       <div class="container">
         <!-- Heading -->
@@ -112,6 +92,97 @@ random.shuffle(brain)
         </div>
       </div>
     </section>
+
+    <!-- 文件展 -->
+    <div class="main-page-section half_left_layout">
+      <div class="main-half-layout half_left_layout studio-bg"></div>
+      <!-- Right Content -->
+      <div class="main-half-layout-container half_left_layout">
+        <div class="about-us-con">
+          <div class="heading">
+            <h3 class="v-hr"><span style="font-family:微軟正黑體">文件展</span></h3>
+          </div><span style="font-family:微軟正黑體">時間: 2017/04/10-5/26 每日 9:00am-7:00pm<br>
+地點: 台新金控 一樓大廳 (台北市仁愛路四段118號)<br><br>
+第十五屆台新藝術獎特別邀請擅長以微型空間引動環境、議題思維的建築學者蕭有志，於台新金控一樓大廳策畫入圍作品文件展。 展場導入「大量交織」的設計理念，以客製化鋁梯作為空間構築的主要工藝，並將入圍作品以「多樣化的空間」、「各種姿態的身體」及「創作的工作狀態」三組關鍵字進行詮釋。在此一空間裝置中，藝術創作者在工作狀態中相當熟悉的鋁梯轉化成多組爬梯、樓梯，與各種形狀的箱籠空間、平台交錯構成，除了身體在其中可以敏銳的感受到空間的引導或限制，藉由電視屏幕中不斷流動的影像，在鋁梯構築起的空間裝置中也邀請觀者在各種變形的身體樣態下，去感受19組入圍作品在影像中顯像的殊異創作世界。
+<br><br>
+展覽策畫 蕭有志<br>
+蕭有志，美國克蘭布魯克藝術學院建築碩士，近年來在方案、教學、非營利及創作四方面同步實踐他所提出的「大量交織」的理念，持續跨方案的連結各種人、事、物等資源並轉化過剩為養份。自2007年起創作了一系列微型移動建築作品，反映了他對建築、藝術及社會發展的多重思考。目前為實踐大學建築設計學系助理教授並兼任系主任。</span>
+
+          </div>
+      </div>
+    </div>
+    <!-- Counter -->
+    <div class="counters nolist-style">
+      <ul class="row">
+       
+      </ul>
+    </div>
+
+    <!-- 國際決審會客室 -->
+    <section class="testimonial" data-stellar-background-ratio="0.5" >
+      <div class="container">
+        <!-- Heading -->
+        <div class="heading-block white">
+          <h3><span style="font-family:微軟正黑體">國際決審會客室</span></h3><br><br><br>
+          <p style="font-family:微軟正黑體;color:#fff"> 「國際決審會客室」是台新銀行文化藝術基金會特別為今年台新藝術獎國際決選委員 Ｍartin Sturm (馬丁．史圖)、Jeff Khan(傑夫．可汗) 以及Ong Keng Sen (王景生)所舉辦的講座。三位來自歐、澳、亞，皆是國際當代藝術場館與藝術節重要推手，將分別與台灣知名策展人徐文瑞，以及詩人導演鴻鴻對談，激盪最尖端的策展經驗與思維！</p>
+          <hr>
+        </div>
+        <div class="col-sm-6">
+          <p style="font-family:微軟正黑體;color:#fff; font-size:18px">國際決審會客室(一)</p>
+          <p style="font-family:微軟正黑體;color:#fff;font-size:15px">這裡，我們跨界交鋒！</p>
+          <p style="font-family:微軟正黑體;color:#fff">
+        時間│ 5.13(六) 19:00-21:00<BR>
+        地點│ 台新金控大樓元廳 (台北市仁愛路四段118號2樓)<BR>
+        主講│ Martin Sturm馬丁．史圖 ／ 奧地利林茲OK當代藝術中心館長<BR>
+        　　　Jeff Khan傑夫．可汗／ 澳洲雪梨Performance Space藝術總監<BR>
+        主持│ 徐文瑞 /獨立策展人、藝評家<BR>
+        Martin Sturm （馬丁．史圖）擔任林茲OK當代藝術中心(OK Offenes Kulturhaus Oberösterreich)館長長達25年，挖掘並開創大量實驗性的藝術策展，如「天空之城」，是林茲2009年「歐洲文化首都年」最大規模策展，至今影響深遠。Performance Space藝術總監Jeff Khan（傑夫・可汗）將1880年代的火車機房搖身變成多元且當代的表演藝術與策展空間，並開發各種場域的當代藝術可能性，與在地社群建立互動。兩位分別來自視覺藝術和表演藝術領域，都是致力於挖掘新的跨界創作與實踐，這裡有什麼新興的美學課題值得討論?在藝術的展演空間上有什麼新的媒合、交集或衝撞？<BR><BR>
+        ◎現場英文逐步口譯。<BR>
+        ◎本活動免費參加，請先線上報名 <a href="#">立即報名</a>
+         </p>
+        </div>
+        <div class="col-sm-6">
+          <p style="font-family:微軟正黑體;color:#fff; font-size:18px">國際決審會客室（二）</p>
+          <p style="font-family:微軟正黑體;color:#fff; font-size:15px">劇場的跨文化旅程</p>
+          <p style="font-family:微軟正黑體;color:#fff">
+        時間│ 5.14(日) 14:00-16:00<BR>
+        地點│ 台新金控大樓元廳 (台北市仁愛路四段118號2樓)<BR>
+        主講│ Ong Keng Sen王景生／新加坡國際藝術節藝術總監<BR>
+        主持│ 鴻鴻／詩人、劇場及電影導演<BR>
+        新加坡揚名國際的劇場導演Ong Keng Sen王景生，他的創作橫跨全球各地，曾為柏林的世界文化中心創辦《穿越藝術節》，並於2001-2003擔任藝術總監暨策展人，對於亞洲多元美學的發展多所貢獻。2014-2017年擔任新加坡國際藝術節總監，更突破既有藝術節模式，帶領新加坡觀眾開創當代藝術的創新視野！王景生將分享自身執導跨文化劇場的經驗和反思、於柏林及新加坡推動藝術節的經驗、亞洲文化與西方劇場的交融產生什麼樣的火花？以及東西方傳統經典的當代意義？由鴻鴻導演銳敏提問，雙導交鋒對談精彩可期！
+        <BR><BR>
+        ◎現場英文逐步口譯。<BR>        
+        ◎本活動免費參加，請先線上報名 <a href="#">立即報名</a>
+         </p>
+        </div>
+      </div>
+    </section >
+</section>
+
+
+<section class="section-js">
+  <script>
+    $(document).ready(function(){
+      $('h3.more, br.more').hide()
+
+      $('.read-more-news').click(function(){
+        $('h3.more, br.more').slideToggle()
+        text = $(this).text()
+        if(text == 'Read More'){
+            $(this).text('Read Less')
+        }else{
+            $(this).text('Read More')
+        }
+      })
+    })
+  </script>
+</section>
+<!-- section-1 end -->
+
+
+<!-- section-2 start -->
+<section id="section-2">
+2
 </section>
 <!-- section-2 end -->
 
@@ -119,7 +190,7 @@ random.shuffle(brain)
 <!-- section-3 start -->
 <section id="section-3">
 
-
+3
 
 
 </section>
