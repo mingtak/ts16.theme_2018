@@ -20,7 +20,7 @@
 <section id="section-1">
 
     <!-- 最新消息 -->
-    <section class="about-ser pad-t-b-130">
+    <section class="about-ser pad-t-b-130" id="news-section">
       <div class="container">
         <!-- Heading -->
         <div class="heading-block margin-bottom-20">
@@ -94,7 +94,7 @@ random.shuffle(brain)
     </section>
 
     <!-- 文件展 -->
-    <div class="main-page-section half_left_layout">
+    <div class="main-page-section half_left_layout" id="document-show-section">
       <div class="main-half-layout half_left_layout studio-bg"></div>
       <!-- Right Content -->
       <div class="main-half-layout-container half_left_layout">
@@ -119,7 +119,7 @@ random.shuffle(brain)
     </div>
 
     <!-- 國際決審會客室 -->
-    <section class="testimonial" data-stellar-background-ratio="0.5" >
+    <section class="testimonial" data-stellar-background-ratio="0.5" id="meeting-room-section">
       <div class="container">
         <!-- Heading -->
         <div class="heading-block white">
@@ -182,7 +182,7 @@ random.shuffle(brain)
 
 <!-- section-2 start -->
 <section id="section-2">
-      <div class="container">
+      <div class="container" id="about-section">
         <!-- Heading -->
         <div class="heading-block margin-bottom-20">
           <h2 style="font-family:微軟正黑體">關於台新藝術獎</h2><BR>
@@ -215,7 +215,7 @@ random.shuffle(brain)
 <!-- section-3 start -->
 <section id="section-3">
 
-      <div class="container">
+      <div class="container" id="for-this-section">
         <!-- Heading -->
         <div class="heading-block margin-bottom-30">
           <h3 style="font-family:微軟正黑體">我心目中的得主</h3>

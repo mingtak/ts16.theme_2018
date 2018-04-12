@@ -22,26 +22,28 @@
 
 <?python
 from plone import api
+portal = api.portal.get()
 lang = api.portal.get_current_language()
 ?>
 
 <tal:lang switch="lang">
 
       <ul class="nav" id="portal-globalnav" tal:case="string:zh-tw">
-              <li class="dropdown active"> <a href="/ts16/++theme++artaward16/index.html" class="dropdown-toggle" data-toggle="dropdown"><img src="/ts16/++theme++artaward16/images/logo/30Taishin.png"></a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">最新消息</span></a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">入圍作品</span></a>
-           <ul class="dropdown-menu">
+          <li class="dropdown active"> <a href="${portal/absolute_url}/${lang}" class="" data-toggle=""><img src="${portal/absolute_url}/++theme++artaward16/images/logo/30Taishin.png"></a></li>
+          <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#news-section" class="" data-toggle=""><span style="font-family:微軟正黑體">最新消息</span></a></li>
+          <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#section-2-head"><span style="font-family:微軟正黑體">入圍作品</span></a>
+<!--           <ul class="dropdown-menu">
                   <li><a href="#">全部</a></li>
                   <li><a href="#">表演藝術</a></li>
                   <li><a href="#">視覺藝術</a></li>
                   <li><a href="#">藝冠榜</a></li>
                 </ul>
-                </li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">文件展</span></a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">國際決審會客室</span></a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">關於台新藝術獎</span></a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">我心目中的得主</span></a></li>
+-->
+          </li>
+          <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#document-show-section"><span style="font-family:微軟正黑體">文件展</span></a></li>
+          <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#meeting-room-section"><span style="font-family:微軟正黑體">國際決審會客室</span></a></li>
+          <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#about-section"><span style="font-family:微軟正黑體">關於台新藝術獎</span></a></li>
+          <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#for-this-section"><span style="font-family:微軟正黑體">我心目中的得主</span></a></li>
               
            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">選擇語系</span></a>
                 <ul class="dropdown-menu">
