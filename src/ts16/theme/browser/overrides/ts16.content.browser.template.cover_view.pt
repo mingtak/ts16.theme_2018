@@ -67,7 +67,7 @@
 
 <!-- section-2 start -->
 <section id="section-2">
-    <section class="portfolio port-wrap pad-t-b-130">
+    <section class="portfolio port-wrap pad-t-b-130" id="section-2-head">
       <div class="container">
         <!-- Heading -->
         <div class="heading-block margin-bottom-30">
@@ -107,11 +107,40 @@ random.shuffle(brain)
 </tal:item>
         </div>
         <!-- LOAD MORE -->
-        <div class="text-center margin-top-50 animate fadeInUp" data-wow-delay="0.4s"> <a href="portfolio_1-4-col.html" class="btn btn-inverse">READ MORE</a> </div>
+        <div class="text-center margin-top-50 animate fadeInUp" data-wow-delay="0.4s">
+            <a href="#section-2-head" class="btn btn-inverse">READ MORE</a>
+        </div>
       </div>
     </section>
 </section>
 <!-- section-2 end -->
+
+
+<!-- section-3 start -->
+<section id="section-3">
+
+
+
+
+</section>
+<!-- section-3 end -->
+
+
+<!-- section-4 start -->
+<section id="section-4">
+4
+</section>
+<!-- section-4 end -->
+
+<!-- section-5 start -->
+<section id="section-5">
+5
+</section>
+<!-- section-5 end -->
+
+
+
+
 
 
 
