@@ -47,3 +47,7 @@ p {
 h5.post-title {
     line-height: 1.5;
 }
+
+.item-detail-page .price {
+    color: #333;
+}
