@@ -46,10 +46,11 @@ bigImage = ['bigImage_1', 'bigImage_2', 'bigImage_3', 'bigImage_4', 'bigImage_5'
           <div class="col-sm-8 large-detail">
             <div class="images-slider">
               <ul class="slides">
-                <tal:item tal:repeat="item bigImage">
-                    <li tal:condition="python:getattr(context, item)"
-                        data-humb="${context/absolute_url}/@@images/${item}/mini">
-                        <img class="img-responsive" src="${context/absolute_url}/@@images/${item}/large" alt="${context/title}">
+                <tal:item tal:repeat="item python:range(1, 6)">
+                    <li tal:condition="python:getattr(context, 'bigImage_%s' % item)"
+                        data-humb="${context/absolute_url}/@@images/bigImage_${item}/mini">
+                        <img class="img-responsive" src="${context/absolute_url}/@@images/bigImage_${item}/large" alt="${context/title}">
+                        <span class="photoer">${python:getattr(context, 'photoer_%s' % item)}</span>
                     </li>
                 </tal:item>
               </ul>

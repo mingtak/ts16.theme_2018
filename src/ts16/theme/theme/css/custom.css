@@ -51,3 +51,7 @@ h5.post-title {
 .item-detail-page .price {
     color: #333;
 }
+
+.template-document_view span.photoer {
+    float: right;
+}
