@@ -46,10 +46,12 @@ bigImage = ['bigImage_1', 'bigImage_2', 'bigImage_3', 'bigImage_4', 'bigImage_5'
           <div class="col-sm-8 large-detail">
             <div class="images-slider">
               <ul class="slides">
-                <li tal:repeat="item bigImage"
-                    data-thumb="${context/absolute_url}/@@images/${item}/mini">
-                    <img class="img-responsive" src="${context/absolute_url}/@@images/${item}/large" alt="${context/title}">
-                </li>
+                <tal:item tal:repeat="item bigImage">
+                    <li tal:condition="python:getattr(context, item)"
+                        data-humb="${context/absolute_url}/@@images/${item}/mini">
+                        <img class="img-responsive" src="${context/absolute_url}/@@images/${item}/large" alt="${context/title}">
+                    </li>
+                </tal:item>
               </ul>
               <div class="clearfix"></div>
             </div>
@@ -59,12 +61,17 @@ bigImage = ['bigImage_1', 'bigImage_2', 'bigImage_3', 'bigImage_4', 'bigImage_5'
           <div class="col-sm-4">
             <div class="row">
               <div class="col-sm-12">
-                <h5>${python:context.title.split('─'.decode('utf-8'))[0]}</h5>
-                <span class="price">${python:context.title.split('─'.decode('utf-8'))[1]}</span> </div>
-                <div class="col-sm-12"> <span class="code">${python:context.description.split('\n')[0]}</span>
+                <h5 class="post-title">${python:context.title.split('─'.decode('utf-8'))[0]}</h5>
+                <span class="price">${python:context.title.split('─'.decode('utf-8'))[1]}</span>
+              </div>
+              <div class="col-sm-12">
+                <span class="code">${python:context.description.split('\n')[0]}</span><br>
+                <span class="code">${python:context.description.split('\n')[1]}</span>
               </div>
             </div>
-            <p>${python:context.description.split('\n')[1]}</p>
+            <p><b>${python:context.description.split('\n')[2]}</b><br>
+              <span class="description">${python:context.description.split('\n')[3]}</span>
+            </p>
             <hr>
             
             <div class="row"> 
