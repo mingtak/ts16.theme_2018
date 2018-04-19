@@ -1,0 +1,319 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="ts16.content">
+
+<metal:styleslot fill-slot="style_slot">
+</metal:styleslot>
+<metal:jsslot fill-slot="javascript_head_slot">
+</metal:jsslot>
+
+<body>
+<metal:content-core fill-slot="content-core">
+<metal:block define-macro="content-core">
+
+<!-- section-1 start -->
+<section id="section-1">
+
+    <!-- 最新消息 -->
+    <section class="about-ser pad-t-b-130" id="news-section">
+      <div class="container">
+        <!-- Heading -->
+        <div class="heading-block margin-bottom-20">
+          <a name="aaa"></a><h2><span style="font-family:微軟正黑體">最新消息</span></h2><br>
+          <h4>- NEWS - </h4><br><br>
+        </div>
+        <div class="row">
+          <!-- Our Mission -->
+          <div class="col-sm-12">
+            <article>
+              <tal:item repeat="item view/getNews">
+                <h3 style="font-family:微軟正黑體" class="${python:'more' if repeat['item'].index > 2 else ''}">
+                  <span>${python:item.created.strftime('%Y.%m.%d')}</span>
+                  <tal:case switch="item/Type">
+                      <a tal:case="string:News Item" href="${item/getURL}">${item/Title}</a>
+                      <a tal:case="string:Link" target="_blank" href="${item/getRemoteUrl}">${item/Title}</a>
+                  </tal:case>
+                </h3>
+                <br class="${python:'more' if repeat['item'].index > 2 else ''}">
+              </tal:item>
+              <p></p>
+              <a href="javascript:void(0)" class="read-more-news">Read More</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 入圍作品 -->
+    <section class="portfolio port-wrap pad-t-b-130" id="section-2-head">
+      <div class="container">
+        <!-- Heading -->
+        <div class="heading-block margin-bottom-30">
+          <h3><span style="font-family:微軟正黑體">入圍作品</span></h3>
+          <hr>
+        </div>
+
+        <!-- PORTOFLIO ITEMS FILTER -->
+        <ul class="portfolio-filter">
+          <li><a class="active" href="#." data-filter="*">All</a></li>
+          <li><a href="#." data-filter=".表演藝術"><span style="font-family:微軟正黑體">表演藝術</span></a></li>
+          <li><a href="#." data-filter=".視覺藝術"><span style="font-family:微軟正黑體">視覺藝術</span></a></li>
+          <li><a href="#." data-filter=".藝冠榜"><span style="font-family:微軟正黑體">藝冠榜</span></a></li>
+        </ul>
+
+        <!-- Item Start -->
+        <div class="items with-space col-3 popup-gallery">
+          <!-- ITEM -->
+<?python
+import random
+brain = list(view.getAward())
+random.shuffle(brain)
+?>
+
+<tal:item repeat="item brain">
+          <div class="cbp-item portfolio-item ${python:item.Subject[0]}">
+            <article>
+              <div class="portfolio-image"> <img alt="${item/Title}" src="${item/getURL}/@@images/image/large">
+                  <div class="portfolio-overlay"></div>
+                <div class="position-bottom">
+                    <h4><a href="${item/getURL}">${item/Title}</a></h4>
+                  <p>${python:item.Subject[0]}</p>
+                </div>
+              </div>
+            </article>
+          </div>
+</tal:item>
+        </div>
+        <!-- LOAD MORE -->
+<!--        <div class="text-center margin-top-50 animate fadeInUp" data-wow-delay="0.4s">
+            <a href="#section-2-head" class="btn btn-inverse">READ MORE</a>
+        </div>
+-->
+      </div>
+    </section>
+
+    <!-- 文件展 -->
+    <div class="main-page-section half_left_layout" id="document-show-section">
+      <div class="main-half-layout half_left_layout studio-bg"></div>
+      <!-- Right Content -->
+      <div class="main-half-layout-container half_left_layout">
+        <div class="about-us-con">
+          <div class="heading">
+            <h3 class="v-hr"><span style="font-family:微軟正黑體">文件展</span></h3>
+          </div><span style="font-family:微軟正黑體; font-size:16px">時間: 2018/04/30-6/15每日9:00am-7:00pm<br>
+地點: 台新金控大樓一樓大廳 (台北市仁愛路四段118號)<br><br>
+第十六屆台新藝術獎入圍作品文件展特別邀請共感地景創作主持建築師，建築學者陳宣誠規劃。<br>
+文件展結合台新金控大樓大廳旋轉樓梯動線，將展場空間向上拉升到七米高。創作上運用六組漸變的線性結構體與層層堆疊的布料構造出變化的透度與張力。隨階梯的爬升，創造出不斷變動的觀看視角與視覺交會點。藉由此變動的觀看方式，隱喻16組入圍作品看與被看相互關係，並與主視覺線條呼應。期待觀眾藉由身體的移動，意識到並再次檢視自己所在的座標，如同我們在理解或重新面對一段歷史，存在的時空上的距離，是否因為距離而改變了什麼？又或許在相視那一瞬間我們明白了什麼？
+<br><br>
+<b>創作團隊：陳宣誠、吳有容、陳立賢<br></b>
+陳宣誠，國立臺南藝術大學藝術博士，現為中原大學建築系專任助理教授、共感地景創作｜ArchiBlur Lab 主持建築師。長期探索在身體與地景間發展另一種重新定義建築的尺度，企圖用最真實的身體感，反覆地去體會事物最根本的價值，讓建築成為一種關於人的環境。主要的創作實踐為：《屋橋》（2015瀨戶內藝術祭家屋計劃）、《城市浮洲計畫》、馬來西亞《綠洲聚落計畫》，法國《懸山．浮橋》，《存在的邊界》（巴勒斯坦美術館典藏），以及《共感群體》（2016台北雙年展、2017夏伽雙年展）等。
+          </div>
+      </div>
+    </div>
+    <!-- Counter -->
+    <div class="counters nolist-style">
+      <ul class="row">
+       
+      </ul>
+    </div>
+
+    <!-- 決選委員講座 -->
+    <section class="testimonial" data-stellar-background-ratio="0.5" id="meeting-room-section">
+      <div class="container">
+        <!-- Heading -->
+        <div class="heading-block white">
+          <h3><span style="font-family:微軟正黑體">決選委員講座</span></h3><br><br><br>
+        </div>
+        <div class="col-sm-6">
+          <p style="font-family:微軟正黑體;color:#fff; font-size:20px">決選委員講座(一)</p>
+          <p style="font-family:微軟正黑體;color:#fff; font-size:18px">國際決審會客室：亞洲當代表演藝術的趨勢</p>
+          <p style="font-family:微軟正黑體;color:#fff; font-size:16px">
+        時間│ 6/2 (六) 7:00-9:30pm<BR>
+        地點│ 台新金控大樓二樓元廳 (台北市仁愛路四段118號2樓)<BR>
+        主講│ <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/hiromimaruoka">丸岡廣美Hiromi Maruoka</a>／日本TPAM橫濱國際表演藝術會議總監<BR>
+        　　　&nbsp;<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/tangshuwing">鄧樹榮</a>／香港鄧樹榮戲劇工作室藝術總監<BR>
+        主持│ <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/linyupin">林于竝</a>／國立台北藝術大學戲劇系副教授<BR>
+台新銀行文化藝術基金會特別邀請本屆藝術獎國際決審丸岡廣美(Hiromi Maruoka)女士以及鄧樹榮先生，與大眾分享多年策展及創作經驗，以及亞洲當代表演藝術的趨勢。<br>
+日本橫濱國際表演藝術會議(TPAM)—亞洲重要表演藝術交流組織的總監丸岡廣美，致力於連結日本以及國際策展，創造藝術家與藝術家、藝術家與場館合作的重要推手。她如何看亞洲當代表演藝術的趨勢？近年來台灣表演藝術發展的觀察？以及表演藝術策展人的國際觀與策展方向？<br>
+鄧樹榮先生是香港著名導演及戲劇教育家，現任「鄧樹榮戲劇工作室」藝術總監，擅於將西方的戲劇用東方的演繹方式，將作品帶往國際舞台。他如何看中、港、澳、台劇場創作的趨勢？近年來亞洲劇場與全球表演藝術發展的關係，以及劇場教育該如何在華語社會繼續推進？<br>
+<br><br>
+※現場日文逐步口譯<br>
+※本活動免費參加，請先上網報名 <a target="_blank" href="">立即報名</a>
+         </p>
+        </div>
+        <div class="col-sm-6">
+          <p style="font-family:微軟正黑體;color:#fff; font-size:20px">決選委員講座（二）</p>
+          <p style="font-family:微軟正黑體;color:#fff; font-size:18px">評什麼？—台新藝術獎得獎作品之我見</p>
+          <p style="font-family:微軟正黑體;color:#fff; font-size:16px">
+        時間│ 6/3 (日) 2:00-4:00pm<BR>
+        地點│ 台新金控大樓五樓 (台北市仁愛路四段118號5樓)<BR>
+        與談│ <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/huanghaiming">黃海鳴</a>／國立台北教育大學藝術與造型設計學系兼任教授<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/linyupin">林于竝</a>／國立台北藝術大學戲劇系副教授<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/chiachijasonwang">王嘉驥</a>／策展人、藝評家 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/liushouyuo">劉守矅</a>／資深劇場導演、演員、舞者<br>
+        主持│ 陳泰松／ 台新銀行文化藝術基金會總監<BR>
+        本屆台新藝術獎歷經九位提名觀察人全年度遴選推薦的16組入圍作品，將由七位海內外專業人士組成的決選委員會議連續數天討論後，於6月2日頒獎典禮現場揭曉三大獎項得主。在得獎名單揭曉後的次日，特別安排四位國內委員與大眾對話，分享評選觀點、跨領域的評選經驗，進而剖析近年台灣當代藝術現況、趨勢與走向。<br>
+<br><br>
+        ※本活動免費參加，請先上網報名 <a target="_blank" href="">立即報名</a>
+         </p>
+        </div>
+      </div>
+    </section >
+</section>
+
+
+<section class="section-js">
+  <script>
+    $(document).ready(function(){
+      $('h3.more, br.more').hide()
+
+      $('.read-more-news').click(function(){
+        $('h3.more, br.more').slideToggle()
+        text = $(this).text()
+        if(text == 'Read More'){
+            $(this).text('Read Less')
+        }else{
+            $(this).text('Read More')
+        }
+      })
+    })
+  </script>
+</section>
+<!-- section-1 end -->
+
+
+<!-- section-2 start -->
+<section id="section-2">
+      <div class="container" id="about-section">
+        <!-- Heading -->
+        <div class="heading-block margin-bottom-20">
+          <h2 style="font-family:微軟正黑體">關於台新藝術獎</h2><BR>
+          <h4>- ABOUT US - </h4><BR>
+        </div>
+<!--        <div class="intro-small col-md-8 center-auto">
+          <p style="font-family:微軟正黑體">獎項</p>
+          <p style="font-family:微軟正黑體">
+          台新藝術獎年度大獎:一名,頒發獎金新台幣一百五十萬元整、證書及獎座<br>
+          台新表演藝術獎:一名,頒發獎金新台幣一百萬元整、證書及獎座<br>
+          台新視覺藝術獎:一名,頒發獎金新台幣一百萬元整、證書及獎座
+          </p>
+        </div>
+-->
+        <!-- OUR SERVICES LIST -->
+        <div class="nolist-style">
+          <ul class="row">
+            <!-- OUR SERVICES LIST -->
+            <li class="col-sm-12"> <i class="icon-tools animate fadeInUp" data-wow-delay="0.4s"></i>
+                <h6 style="font-family:微軟正黑體"> 第十六屆台新藝術獎決審委員｜第十六屆台新藝術獎提名觀察人</h6>
+              <p style="font-family:微軟正黑體; font-size:14px" align="left">
+「台新藝術獎」於2002年由台新銀行贊助支持的「台新銀行文化藝術基金會」所創設，同時觀照視覺、表演與跨領域藝術類的創作，開啟了國內、外藝術獎項頒發之先河。透過獨創的評選機制，包括全年專業提名、觀察與藝術評論的發表，同時結合年度國際評審的參與，「台新藝術獎」不僅止於肯定台灣專業創作成果的重要獎項，更努力建構足以銜接台灣當代創作者與國際對話的平台。<br>
+ 「台新藝術獎」前十年以獎勵當年度最具傑出創意表現，或最能突顯專業成就的視覺藝術展及表演藝術節目為主；每年頒發年度表演藝術大獎、年度視覺藝術大獎，及跨領域評選的「評審團特別獎」。第12至14屆（2013至2015年），因應當代藝術跨越疆界之趨勢，對當下社會現象的反思與驅動具豐碩能量之特質，改以不分類方式評選與給獎，授予五個獎項，其中包括一件「年度大獎」，第15屆起，顧及藝術類型本質上有其殊異，獎項調整為分類給獎，惟保留「年度大獎」不分類精神，以容納藝術創作更大的可能性與未來性。<br>
+ 「台新藝術獎」的運作，包括專責提名觀察人的機制、透過網路功能建立公眾參與討論的管道、定期公佈提名、複選、國際決選的程序，對外推廣宣達和封冠的儀典。藉由專業人士的參與和各方力量的投入，使一個藝術桂冠的打造，能兼及文化環境的改善，及縮短藝術與民眾的距離，讓創意的活動與美感的事物自發地融入生活。 
+              </p>
+            </li>
+            <h6 style="font-family:微軟正黑體" align="center">台新藝術獎第十五屆 評選辦法 
+              <a target="_blank" href="http://16award.taishinart.org.tw:8403/ts16/7b2c5341516d5c4653f065b085dd8853734e8a5590788fa66cd5.pdf/edit/++widget++form.widgets.file/@@download/%E7%AC%AC%E5%8D%81%E5%85%AD%E5%B1%86%E5%8F%B0%E6%96%B0%E8%97%9D%E8%A1%93%E7%8D%8E%E8%A9%95%E9%81%B8%E8%BE%A6%E6%B3%95.pdf">下載</a>
+            </h6>
+            <!-- Unlimited Features -->
+          </ul>
+        </div>
+
+
+        <div class="intro-small col-md-8 center-auto">
+          <p style="font-family:微軟正黑體">獎項</p>
+          <p style="font-family:微軟正黑體">
+          台新藝術獎年度大獎:一名,頒發獎金新台幣一百五十萬元整、證書及獎座<br>
+          台新表演藝術獎:一名,頒發獎金新台幣一百萬元整、證書及獎座<br>
+          台新視覺藝術獎:一名,頒發獎金新台幣一百萬元整、證書及獎座
+          </p>
+        </div>
+
+
+
+
+      </div>
+</section>
+<!-- section-2 end -->
+
+
+<!-- section-3 start -->
+<section id="section-3">
+
+      <div class="container" id="for-this-section">
+        <!-- Heading -->
+        <div class="heading-block margin-bottom-30">
+          <h3 style="font-family:微軟正黑體">我心目中的得主</h3>
+          <hr>
+        </div>
+        <div class="intro-small col-md-8 center-auto">
+          <p style="font-family:微軟正黑體">── 為心中所屬，投下鼓舞的一票！──</p>
+	  <p style="font-family:微軟正黑體">
+十六件入圍作品裡，哪一件最讓您印象深刻？<br>
+選出您心中的大獎得主，投您所好，還能把好禮帶回家！<br>
+5/1 (二)起─6/1(五)12:00PM止<br>
+以E-Mail方式行投票，需投滿三票，作品不得重複，每個帳號均僅能進行一次投票
+          </p>
+        </div>
+        <!-- PORTOFLIO ITEMS FILTER -->
+        <!-- Item Start -->
+        <div class="items with-space col-3 popup-gallery">
+        </div>
+      </div>
+
+</section>
+<!-- section-3 end -->
+
+
+<!-- section-4 start -->
+<section id="section-4">
+      <div class="container">
+        <div class="heading-block">
+          <h3 style="font-family:微軟正黑體">留言區</h3><BR><BR><BR>
+          <P style="font-family:微軟正黑體; font-size:14px">如在本屆16組入圍作品之外，您尚有心目中的年度佳作卻未入圍之遺憾，歡迎您針對本屆未入圍之遺珠作品，在留言區表達您的看法。凡在留言區寫下心目中遺珠作品名稱及理由，我們就送您ARTalks票夾。</P>
+        </div>
+        <div class="news-post">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="fb-comments" data-href="http://16award.taishinart.org.tw" data-width="100%" data-num-posts="5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<!-- section-4 end -->
+
+<!-- section-5 start -->
+<section id="section-5">
+      <div class="container"> 
+        <!-- Heading -->
+        <div class="heading-block margin-bottom-30">
+          <h3 style="font-family:微軟正黑體">合作單位</h3>
+          <hr>
+        </div>
+       <div class="col-sm-5">
+          <p style="font-family:微軟正黑體"><img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo01.jpg"></p>
+        </div>
+        <div class="col-sm-7">
+          <p style="font-family:微軟正黑體"><img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo02.jpg"></p>
+        </div>
+      </div>
+</section>
+<!-- section-5 end -->
+
+
+
+
+
+
+
+
+</metal:block>
+</metal:content-core>
+
+</body>
+</html>

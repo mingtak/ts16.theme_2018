@@ -47,8 +47,8 @@ lang = api.portal.get_current_language()
               
            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">選擇語系</span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">中文 TW</a></li>
-                  <li><a href="#">英文 EN</a></li>
+                  <li><a href="${portal/absolute_url}/zh-tw">中文 TW</a></li>
+                  <li><a href="${portal/absolute_url}/en-us">英文 EN</a></li>
                 </ul>
               </li>
         </ul>
@@ -75,8 +75,8 @@ lang = api.portal.get_current_language()
               
            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">選擇語系</span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">中文 TW</a></li>
-                  <li><a href="#">英文 EN</a></li>
+                  <li><a href="${portal/absolute_url}/zh-tw">中文 TW</a></li>
+                  <li><a href="${portal/absolute_url}/en-us">英文 EN</a></li>
                 </ul>
               </li>
       </ul>
