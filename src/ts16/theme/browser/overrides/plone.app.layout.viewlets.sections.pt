@@ -59,7 +59,7 @@ lang = api.portal.get_current_language()
           <li class="dropdown active"> <a href="${portal/absolute_url}/${lang}"><img src="/ts16/++theme++artaward16/images/logo/30Taishin.png"></a></li>
           <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#about-section"><span style="font-family:微軟正黑體">About Taishin Arts Award</span></a></li>
           <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#section-2-head"><span style="font-family:微軟正黑體">Finalists</span></a></li>
-          <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#document-show-section"><span style="font-family:微軟正黑體">Documentary Exhibition</span></a></li>
+          <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#document-show-section"><span style="font-family:微軟正黑體">Exhibition</span></a></li>
            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">Language</span></a>
                 <ul class="dropdown-menu">
                   <li><a href="${portal/absolute_url}/zh-tw">中文 TW</a></li>

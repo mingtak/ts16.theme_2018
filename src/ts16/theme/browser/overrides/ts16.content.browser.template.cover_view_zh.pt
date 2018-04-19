@@ -63,7 +63,7 @@
           <li><a class="active" href="#." data-filter="*">All</a></li>
           <li><a href="#." data-filter=".表演藝術"><span style="font-family:微軟正黑體">表演藝術</span></a></li>
           <li><a href="#." data-filter=".視覺藝術"><span style="font-family:微軟正黑體">視覺藝術</span></a></li>
-          <li><a href="#." data-filter=".藝冠榜"><span style="font-family:微軟正黑體">藝冠榜</span></a></li>
+<!--          <li><a href="#." data-filter=".藝冠榜"><span style="font-family:微軟正黑體">藝冠榜</span></a></li> -->
         </ul>
 
         <!-- Item Start -->
@@ -105,13 +105,13 @@ random.shuffle(brain)
         <div class="about-us-con">
           <div class="heading">
             <h3 class="v-hr"><span style="font-family:微軟正黑體">文件展</span></h3>
-          </div><span style="font-family:微軟正黑體; font-size:16px">時間: 2018/04/30-6/15每日9:00am-7:00pm<br>
+          </div><span style="font-family:微軟正黑體; font-size:16px; line-height: 26px">時間: 2018/04/30-6/15每日9:00am-7:00pm<br>
 地點: 台新金控大樓一樓大廳 (台北市仁愛路四段118號)<br><br>
 第十六屆台新藝術獎入圍作品文件展特別邀請共感地景創作主持建築師，建築學者陳宣誠規劃。<br>
 文件展結合台新金控大樓大廳旋轉樓梯動線，將展場空間向上拉升到七米高。創作上運用六組漸變的線性結構體與層層堆疊的布料構造出變化的透度與張力。隨階梯的爬升，創造出不斷變動的觀看視角與視覺交會點。藉由此變動的觀看方式，隱喻16組入圍作品看與被看相互關係，並與主視覺線條呼應。期待觀眾藉由身體的移動，意識到並再次檢視自己所在的座標，如同我們在理解或重新面對一段歷史，存在的時空上的距離，是否因為距離而改變了什麼？又或許在相視那一瞬間我們明白了什麼？
 <br><br>
-<b>創作團隊：陳宣誠、吳有容、陳立賢<br></b>
-陳宣誠，國立臺南藝術大學藝術博士，現為中原大學建築系專任助理教授、共感地景創作｜ArchiBlur Lab 主持建築師。長期探索在身體與地景間發展另一種重新定義建築的尺度，企圖用最真實的身體感，反覆地去體會事物最根本的價值，讓建築成為一種關於人的環境。主要的創作實踐為：《屋橋》（2015瀨戶內藝術祭家屋計劃）、《城市浮洲計畫》、馬來西亞《綠洲聚落計畫》，法國《懸山．浮橋》，《存在的邊界》（巴勒斯坦美術館典藏），以及《共感群體》（2016台北雙年展、2017夏伽雙年展）等。
+<b>規劃及設計團隊：陳宣誠、吳有容、陳立賢<br></b><br>
+<b>陳宣誠簡介</b><br>國立臺南藝術大學藝術博士，現為中原大學建築系專任助理教授、共感地景創作｜ArchiBlur Lab 主持建築師。長期探索在身體與地景間發展另一種重新定義建築的尺度，企圖用最真實的身體感，反覆地去體會事物最根本的價值，讓建築成為一種關於人的環境。主要的創作實踐為：《屋橋》（2015瀨戶內藝術祭家屋計劃）、《城市浮洲計畫》、馬來西亞《綠洲聚落計畫》，法國《懸山．浮橋》，《存在的邊界》（巴勒斯坦美術館典藏），以及《共感群體》（2016台北雙年展、2017夏伽雙年展）等。
           </div>
       </div>
     </div>
@@ -129,15 +129,15 @@ random.shuffle(brain)
         <div class="heading-block white">
           <h3><span style="font-family:微軟正黑體">決選委員講座</span></h3><br><br><br>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6" style="padding-right: 40px">
           <p style="font-family:微軟正黑體;color:#fff; font-size:20px">決選委員講座(一)</p>
-          <p style="font-family:微軟正黑體;color:#fff; font-size:18px">國際決審會客室：亞洲當代表演藝術的趨勢</p>
+          <p style="font-family:微軟正黑體;color:#000; font-size:18px"><b>國際決審會客室：亞洲當代表演藝術的趨勢</b></p>
           <p style="font-family:微軟正黑體;color:#fff; font-size:16px">
         時間│ 6/2 (六) 7:00-9:30pm<BR>
         地點│ 台新金控大樓二樓元廳 (台北市仁愛路四段118號2樓)<BR>
         主講│ <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/hiromimaruoka">丸岡廣美Hiromi Maruoka</a>／日本TPAM橫濱國際表演藝術會議總監<BR>
-        　　　&nbsp;<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/tangshuwing">鄧樹榮</a>／香港鄧樹榮戲劇工作室藝術總監<BR>
-        主持│ <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/linyupin">林于竝</a>／國立台北藝術大學戲劇系副教授<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/tangshuwing">鄧樹榮</a>／香港鄧樹榮戲劇工作室藝術總監<BR>
+        主持│ <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/linyupin">林于竝</a>／國立台北藝術大學戲劇系副教授<BR><br><br><br>
 台新銀行文化藝術基金會特別邀請本屆藝術獎國際決審丸岡廣美(Hiromi Maruoka)女士以及鄧樹榮先生，與大眾分享多年策展及創作經驗，以及亞洲當代表演藝術的趨勢。<br>
 日本橫濱國際表演藝術會議(TPAM)—亞洲重要表演藝術交流組織的總監丸岡廣美，致力於連結日本以及國際策展，創造藝術家與藝術家、藝術家與場館合作的重要推手。她如何看亞洲當代表演藝術的趨勢？近年來台灣表演藝術發展的觀察？以及表演藝術策展人的國際觀與策展方向？<br>
 鄧樹榮先生是香港著名導演及戲劇教育家，現任「鄧樹榮戲劇工作室」藝術總監，擅於將西方的戲劇用東方的演繹方式，將作品帶往國際舞台。他如何看中、港、澳、台劇場創作的趨勢？近年來亞洲劇場與全球表演藝術發展的關係，以及劇場教育該如何在華語社會繼續推進？<br>
@@ -146,9 +146,9 @@ random.shuffle(brain)
 ※本活動免費參加，請先上網報名 <a target="_blank" href="http://www.taishinart.org.tw/chinese/3_event/detail.php?ID=615">立即報名</a>
          </p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6" style="padding-left: 40px">
           <p style="font-family:微軟正黑體;color:#fff; font-size:20px">決選委員講座（二）</p>
-          <p style="font-family:微軟正黑體;color:#fff; font-size:18px">評什麼？—台新藝術獎得獎作品之我見</p>
+          <p style="font-family:微軟正黑體;color:#000; font-size:18px"><b>評什麼？—台新藝術獎得獎作品之我見</b></p>
           <p style="font-family:微軟正黑體;color:#fff; font-size:16px">
         時間│ 6/3 (日) 2:00-4:00pm<BR>
         地點│ 台新金控大樓五樓 (台北市仁愛路四段118號5樓)<BR>
@@ -156,7 +156,7 @@ random.shuffle(brain)
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/linyupin">林于竝</a>／國立台北藝術大學戲劇系副教授<br>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/chiachijasonwang">王嘉驥</a>／策展人、藝評家 <br>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/liushouyuo">劉守矅</a>／資深劇場導演、演員、舞者<br>
-        主持│ 陳泰松／ 台新銀行文化藝術基金會總監<BR>
+        主持│ 陳泰松／ 台新銀行文化藝術基金會總監<BR><br>
         本屆台新藝術獎歷經九位提名觀察人全年度遴選推薦的16組入圍作品，將由七位海內外專業人士組成的決選委員會議連續數天討論後，於6月2日頒獎典禮現場揭曉三大獎項得主。在得獎名單揭曉後的次日，特別安排四位國內委員與大眾對話，分享評選觀點、跨領域的評選經驗，進而剖析近年台灣當代藝術現況、趨勢與走向。<br>
 <br><br>
         ※本活動免費參加，請先上網報名 <a target="_blank" href="http://www.taishinart.org.tw/chinese/3_event/detail.php?ID=615">立即報名</a>
@@ -193,26 +193,21 @@ random.shuffle(brain)
         <!-- Heading -->
         <div class="heading-block margin-bottom-20">
           <h2 style="font-family:微軟正黑體">關於台新藝術獎</h2><BR>
-          <h4>- ABOUT US - </h4><BR>
+<!--          <h4>- ABOUT US - </h4><BR> -->
         </div>
-<!--        <div class="intro-small col-md-8 center-auto">
-          <p style="font-family:微軟正黑體">獎項</p>
-          <p style="font-family:微軟正黑體">
-          台新藝術獎年度大獎:一名,頒發獎金新台幣一百五十萬元整、證書及獎座<br>
-          台新表演藝術獎:一名,頒發獎金新台幣一百萬元整、證書及獎座<br>
-          台新視覺藝術獎:一名,頒發獎金新台幣一百萬元整、證書及獎座
-          </p>
-        </div>
--->
+
         <!-- OUR SERVICES LIST -->
         <div class="nolist-style">
           <ul class="row">
             <!-- OUR SERVICES LIST -->
-            <li class="col-sm-12"> <i class="icon-tools animate fadeInUp" data-wow-delay="0.4s"></i>
-                <h6 style="font-family:微軟正黑體"> <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/final">第十六屆台新藝術獎決審委員</a>｜<a target="_blank" href="http://talks.taishinart.org.tw/juries/2017">第十六屆台新藝術獎提名觀察人</a></h6>
-              <p style="font-family:微軟正黑體; font-size:14px" align="left">
-「台新藝術獎」於2002年由台新銀行贊助支持的「台新銀行文化藝術基金會」所創設，同時觀照視覺、表演與跨領域藝術類的創作，開啟了國內、外藝術獎項頒發之先河。透過獨創的評選機制，包括全年專業提名、觀察與藝術評論的發表，同時結合年度國際評審的參與，「台新藝術獎」不僅止於肯定台灣專業創作成果的重要獎項，更努力建構足以銜接台灣當代創作者與國際對話的平台。<br>
- 「台新藝術獎」前十年以獎勵當年度最具傑出創意表現，或最能突顯專業成就的視覺藝術展及表演藝術節目為主；每年頒發年度表演藝術大獎、年度視覺藝術大獎，及跨領域評選的「評審團特別獎」。第12至14屆（2013至2015年），因應當代藝術跨越疆界之趨勢，對當下社會現象的反思與驅動具豐碩能量之特質，改以不分類方式評選與給獎，授予五個獎項，其中包括一件「年度大獎」，第15屆起，顧及藝術類型本質上有其殊異，獎項調整為分類給獎，惟保留「年度大獎」不分類精神，以容納藝術創作更大的可能性與未來性。<br>
+            <li class="col-sm-12"> <!-- <i class="icon-tools animate fadeInUp" data-wow-delay="0.4s"></i> -->
+<!--                <h6 style="font-family:微軟正黑體">
+                <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/final">第十六屆台新藝術獎決審委員</a>｜
+<a target="_blank" href="http://talks.taishinart.org.tw/juries/2017">第十六屆台新藝術獎提名觀察人</a></h6>
+-->
+              <p style="font-family:微軟正黑體; font-size:16px; line-height:26px" align="left">
+「台新藝術獎」於2002年由台新銀行贊助支持的「台新銀行文化藝術基金會」所創設，同時觀照視覺、表演與跨領域藝術類的創作，開啟了國內、外藝術獎項頒發之先河。透過獨創的評選機制，包括全年專業提名、觀察與藝術評論的發表，同時結合年度國際評審的參與，「台新藝術獎」不僅止於肯定台灣專業創作成果的重要獎項，更努力建構足以銜接台灣當代創作者與國際對話的平台。<br><br>
+ 「台新藝術獎」前十年以獎勵當年度最具傑出創意表現，或最能突顯專業成就的視覺藝術展及表演藝術節目為主；每年頒發年度表演藝術大獎、年度視覺藝術大獎，及跨領域評選的「評審團特別獎」。第12至14屆（2013至2015年），因應當代藝術跨越疆界之趨勢，對當下社會現象的反思與驅動具豐碩能量之特質，改以不分類方式評選與給獎，授予五個獎項，其中包括一件「年度大獎」，第15屆起，顧及藝術類型本質上有其殊異，獎項調整為分類給獎，惟保留「年度大獎」不分類精神，以容納藝術創作更大的可能性與未來性。<br><br>
  「台新藝術獎」的運作，包括專責提名觀察人的機制、透過網路功能建立公眾參與討論的管道、定期公佈提名、複選、國際決選的程序，對外推廣宣達和封冠的儀典。藉由專業人士的參與和各方力量的投入，使一個藝術桂冠的打造，能兼及文化環境的改善，及縮短藝術與民眾的距離，讓創意的活動與美感的事物自發地融入生活。 
               </p>
             </li>
@@ -233,7 +228,17 @@ random.shuffle(brain)
           </p>
         </div>
 
-
+<br>
+        <div class="nolist-style">
+          <ul class="row">
+            <!-- OUR SERVICES LIST -->
+            <li class="col-sm-12"> 
+                <h6 style="font-family:微軟正黑體">
+                <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/final">第十六屆台新藝術獎決審委員</a>｜
+<a target="_blank" href="http://talks.taishinart.org.tw/juries/2017">第十六屆台新藝術獎提名觀察人</a></h6>
+            </li>
+          </ul>
+        </div>
 
 
       </div>
@@ -291,10 +296,11 @@ random.shuffle(brain)
 <section id="section-5">
       <div class="container"> 
         <!-- Heading -->
-        <div class="heading-block margin-bottom-30">
+<!--        <div class="heading-block margin-bottom-30">
           <h3 style="font-family:微軟正黑體">合作單位</h3>
           <hr>
         </div>
+-->
        <div class="col-sm-5">
           <p style="font-family:微軟正黑體"><img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo01.jpg"></p>
         </div>

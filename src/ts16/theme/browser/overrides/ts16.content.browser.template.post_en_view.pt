@@ -1,0 +1,123 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+    i18n:domain="plone">
+<body>
+
+<metal:content-core fill-slot="content-core">
+<metal:content-core define-macro="content-core"
+                    tal:define="toc context/table_of_contents|nothing;">
+
+
+<?python
+from plone import api
+portal = api.portal.get()
+lang = 'en-us'
+bigImage = ['bigImage_1', 'bigImage_2', 'bigImage_3', 'bigImage_4', 'bigImage_5']
+?>
+  <!-- Slider -->
+  <section class="sub-bnr" data-stellar-background-ratio="0.5" id="path-section">
+    <div class="position-center-center">
+      <div class="container">
+<!--        <h4>${context/title}</h4> -->
+
+        <!-- Breadcrumb -->
+      </div>
+    </div>
+  </section>
+
+<section id="section-1">
+
+    <!--======= PAGES INNER =========-->
+
+    <section class="item-detail-page pad-t-b-130">
+      <div class="container">
+        <div class="row"> 
+          
+          <!--======= IMAGES SLIDER =========-->
+          <div class="col-sm-8 large-detail">
+            <div class="images-slider">
+              <ul class="slides">
+                <tal:item tal:repeat="item python:range(1, 6)">
+                    <li tal:condition="python:getattr(view.post, 'bigImage_%s' % item)"
+                        data-humb="${view/post/absolute_url}/@@images/bigImage_${item}/mini">
+                        <img class="img-responsive" src="${view/post/absolute_url}/@@images/bigImage_${item}/large" alt="${view/post/en_title}">
+                        <span class="photoer">${python:getattr(view.post, 'photoer_%s' % item)}</span>
+                    </li>
+                </tal:item>
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          
+          <!--======= ITEM DETAILS =========-->
+          <div class="col-sm-4">
+            <div class="row">
+              <div class="col-sm-12">
+                <h5 class="post-title">${python:view.post.en_title.split('\n')[0]}</h5>
+                <h5 class="post-title">${python:view.post.en_title.split('\n')[1]}</h5>
+              </div>
+              <div class="col-sm-12">
+                <span class="code">${python:view.post.en_description.split('\n')[0]}</span><br>
+                <span class="code">${python:view.post.en_description.split('\n')[1]}</span>
+              </div>
+            </div>
+            <p><b>${python:view.post.en_description.split('\n')[2]}</b><br>
+              <span class="description">${python:view.post.en_description.split('\n')[3]}</span>
+            </p>
+            <hr>
+            
+            <div class="row"> 
+              <!-- QUIENTY -->
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+  <div id="parent-fieldname-text"
+      tal:condition="view/post/en_text"
+      tal:content="structure python:view.post.en_text.output_relative_to(view.context)"
+      tal:attributes="class python: toc and 'pat-autotoc' or ''" />
+
+        </div>
+      </div>
+    </section>
+
+</section>
+
+<section class="section-js">
+    <script>
+        $('.our-main-ser.pad-t-b-130.padding-bottom-90, .portfolio.port-wrap.pad-t-b-130, .new-main.pad-t-b-130').hide()
+    </script>
+</section>
+
+<!-- section-5 start -->
+<section id="section-5">
+      <div class="container">
+        <!-- Heading -->
+        <div class="heading-block margin-bottom-30">
+          <h3 style="font-family:微軟正黑體">合作單位</h3>
+          <hr>
+        </div>
+        <div class="col-sm-5">
+          <p style="font-family:微軟正黑體"><img src="${portal/absolute_url}/++theme++artaward16/images/logo/logo01.jpg"></p>
+        </div>
+        <div class="col-sm-7">
+          <p style="font-family:微軟正黑體"><img src="${portal/absolute_url}/++theme++artaward16/images/logo/logo02.jpg"></p>
+        </div>
+      </div>
+</section>
+<!-- section-5 end -->
+
+
+
+
+</metal:content-core>
+</metal:content-core>
+
+</body>
+</html>

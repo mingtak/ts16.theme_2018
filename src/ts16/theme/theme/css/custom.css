@@ -1,3 +1,23 @@
+.template-cover_view .testimonial {
+    padding-top: 80px;
+}
+
+.main-half-layout-container {
+    padding-top: 20px;
+}
+
+.main-half-layout {
+    width: 40%;
+}
+
+.main-half-layout-container {
+    width: 50%;
+}
+
+#document-show-section {
+    margin-top: 50px;
+}
+
 .template-newsitem_view #content p {
     font-size: 16px;
 }
