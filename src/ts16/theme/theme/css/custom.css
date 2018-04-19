@@ -1,5 +1,24 @@
+.intro-small {
+    margin-bottom: 0px;
+}
+
+.template-cover_view .pad-t-b-130 {
+    padding-bottom: 0px !important;
+}
+
+.template-cover_view .padding-bottom-90 {
+    padding-bottom: 0px !important;
+}
+
 .template-cover_view a:link {
     color: #8b91ff;
+}
+.template-cover_view a.dropdown-toggle:link {
+    color: #000;
+}
+
+.template-cover_view #meeting-room-section a:link {
+    color: #23c;
 }
 
 .loader:before, .loader:after {
