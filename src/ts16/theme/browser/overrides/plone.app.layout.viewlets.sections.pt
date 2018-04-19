@@ -55,25 +55,12 @@ lang = api.portal.get_current_language()
 
 
 
-
-
       <ul class="nav" id="portal-globalnav" tal:case="string:en-us">
-              <li class="dropdown active"> <a href="/ts16/++theme++artaward16/index.html" class="dropdown-toggle" data-toggle="dropdown"><img src="/ts16/++theme++artaward16/images/logo/30Taishin.png"></a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">最新消息(en)</span></a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">入圍作品</span></a>
-           <ul class="dropdown-menu">
-                  <li><a href="#">全部</a></li>
-                  <li><a href="#">表演藝術</a></li>
-                  <li><a href="#">視覺藝術</a></li>
-                  <li><a href="#">藝冠榜</a></li>
-                </ul>
-                </li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">文件展</span></a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">決選委員講座</span></a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">關於台新藝術獎</span></a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">我心目中的得主</span></a></li>
-              
-           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">選擇語系</span></a>
+          <li class="dropdown active"> <a href="${portal/absolute_url}/${lang}"><img src="/ts16/++theme++artaward16/images/logo/30Taishin.png"></a></li>
+          <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#about-section"><span style="font-family:微軟正黑體">About Taishin Arts Award</span></a></li>
+          <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#section-2-head"><span style="font-family:微軟正黑體">Finalists</span></a></li>
+          <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#document-show-section"><span style="font-family:微軟正黑體">Documentary Exhibition</span></a></li>
+           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-family:微軟正黑體">Language</span></a>
                 <ul class="dropdown-menu">
                   <li><a href="${portal/absolute_url}/zh-tw">中文 TW</a></li>
                   <li><a href="${portal/absolute_url}/en-us">英文 EN</a></li>
