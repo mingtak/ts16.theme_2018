@@ -33,8 +33,11 @@
             <article>
               <tal:item repeat="item view/getNews">
                 <h3 style="font-family:微軟正黑體" class="${python:'more' if repeat['item'].index > 2 else ''}">
-                  <span>${python:item.created.strftime('%Y.%m.%d')}</span>　
-                  <a href="${item/getURL}">${item/Title}</a>
+                  <span>${python:item.created.strftime('%Y.%m.%d')}</span>
+                  <tal:case switch="item/Type">
+                      <a tal:case="string:News Item" href="${item/getURL}">${item/Title}</a>
+                      <a tal:case="string:Link" target="_blank" href="${item/getRemoteUrl}">${item/Title}</a>
+                  </tal:case>
                 </h3>
                 <br class="${python:'more' if repeat['item'].index > 2 else ''}">
               </tal:item>
@@ -118,20 +121,20 @@ random.shuffle(brain)
       </ul>
     </div>
 
-    <!-- 國際決審會客室 -->
+    <!-- 決選委員講座 -->
     <section class="testimonial" data-stellar-background-ratio="0.5" id="meeting-room-section">
       <div class="container">
         <!-- Heading -->
         <div class="heading-block white">
-          <h3><span style="font-family:微軟正黑體">國際決審會客室</span></h3><br><br><br>
-          <p style="font-family:微軟正黑體;color:#fff">[ 這段文字是舊的] 「國際決審會客室」是台新銀行文化藝術基金會特別為今年台新藝術獎國際決選委員 Ｍartin Sturm (馬丁．史圖)、Jeff Khan(傑夫．可汗) 以及Ong Keng Sen (王景生)所舉辦的講座。三位來自歐、澳、亞，皆是國際當代藝術場館與藝術節重要推手，將分別與台灣知名策展人徐文瑞，以及詩人導演鴻鴻對談，激盪最尖端的策展經驗與思維！</p>
+          <h3><span style="font-family:微軟正黑體">決選委員講座</span></h3><br><br><br>
+          <p style="font-family:微軟正黑體;color:#fff">[ 這段文字是舊的] 「決選委員講座」是台新銀行文化藝術基金會特別為今年台新藝術獎國際決選委員 Ｍartin Sturm (馬丁．史圖)、Jeff Khan(傑夫．可汗) 以及Ong Keng Sen (王景生)所舉辦的講座。三位來自歐、澳、亞，皆是國際當代藝術場館與藝術節重要推手，將分別與台灣知名策展人徐文瑞，以及詩人導演鴻鴻對談，激盪最尖端的策展經驗與思維！</p>
         </div>
         <div class="col-sm-6">
-          <p style="font-family:微軟正黑體;color:#fff; font-size:18px">國際決審會客室(一)</p>
-          <p style="font-family:微軟正黑體;color:#fff;font-size:15px">亞洲當代表演藝術的趨勢</p>
+          <p style="font-family:微軟正黑體;color:#fff; font-size:18px">決選委員講座(一)</p>
+          <p style="font-family:微軟正黑體;color:#fff;font-size:15px">國際決審會客室：亞洲當代表演藝術的趨勢</p>
           <p style="font-family:微軟正黑體;color:#fff">
         時間│ 6/2 (六) 7:00-9:30pm<BR>
-        地點│ 台新金控大樓元廳 (台北市仁愛路四段118號2樓)<BR>
+        地點│ 台新金控大樓二樓元廳 (台北市仁愛路四段118號2樓)<BR>
         主講│ 丸岡廣美Hiromi Maruoka（超連結）／日本TPAM橫濱國際表演藝術會議總監<BR>
         　　　鄧樹榮（超連結）／香港鄧樹榮戲劇工作室藝術總監<BR>
         主持│ 林于竝（超連結）／國立台北藝術大學戲劇系副教授<BR>
@@ -144,17 +147,17 @@ random.shuffle(brain)
          </p>
         </div>
         <div class="col-sm-6">
-          <p style="font-family:微軟正黑體;color:#fff; font-size:18px">國際決審會客室（二）</p>
+          <p style="font-family:微軟正黑體;color:#fff; font-size:18px">決選委員講座（二）</p>
           <p style="font-family:微軟正黑體;color:#fff; font-size:15px">評什麼？—台新藝術獎得獎作品之我見</p>
           <p style="font-family:微軟正黑體;color:#fff">
         時間│ 6/3 (日) 2:00-4:00pm<BR>
-        地點│ 台新金控大樓5樓 (台北市仁愛路四段118號5樓)<BR>
+        地點│ 台新金控大樓五樓 (台北市仁愛路四段118號5樓)<BR>
         與談│ 黃海鳴（超連結）／國立台北教育大學藝術與造型設計學系兼任教授<br>
               林于竝（超連結）／國立台北藝術大學戲劇系副教授<br>
-              王嘉驥（超連結）／藝評家、策展人 <br>
+              王嘉驥（超連結）／策展人、藝評家 <br>
               劉守矅（超連結）／資深劇場導演、演員、舞者<br>
         主持│ 陳泰松／ 台新銀行文化藝術基金會總監<BR>
-        本屆台新藝術獎歷經九位提名觀察人全年度遴選推薦的16組入圍作品，將由七位海內外專業人士組成的決選團隊連續數天討論後，於6月2日頒獎典禮現場揭曉三大獎項得主。在得獎名單揭曉後的次日，特別安排四位國內評選委員與大眾對話，分享評選觀點、跨領域的評選經驗，進而剖析近年台灣當代藝術現況、趨勢與走向。<br>
+        本屆台新藝術獎歷經九位提名觀察人全年度遴選推薦的16組入圍作品，將由七位海內外專業人士組成的決選委員會議連續數天討論後，於6月2日頒獎典禮現場揭曉三大獎項得主。在得獎名單揭曉後的次日，特別安排四位國內委員與大眾對話，分享評選觀點、跨領域的評選經驗，進而剖析近年台灣當代藝術現況、趨勢與走向。<br>
 <br><br>
         ※本活動免費參加，請先上網報名 立即報名(超連結)
          </p>
