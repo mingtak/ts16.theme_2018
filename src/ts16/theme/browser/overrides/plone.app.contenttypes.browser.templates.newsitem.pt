@@ -34,6 +34,8 @@ lang = api.portal.get_current_language()
       <div class="container">
         <div class="row"> 
 
+<h5>${context/title}</h5>
+
   <div id="parent-fieldname-text"
       tal:condition="context/text"
       tal:content="structure python:context.text.output_relative_to(view.context)"

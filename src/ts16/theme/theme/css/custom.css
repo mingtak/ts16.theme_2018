@@ -1,3 +1,7 @@
+.template-newsitem_view #content p {
+    font-size: 16px;
+}
+
 .intro-small {
     margin-bottom: 0px;
 }
