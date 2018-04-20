@@ -232,7 +232,7 @@ The selection of the Taishin Arts Award includes the system of appointed nominat
       <div class="container"> 
         <!-- Heading -->
        <div class="col-sm-12 col-md-7">
-          <img style="max-width:100%" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo03.jpg">    
+          <img style="max-width:100%" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo04.png">    
        </div>
       </div>
 </section>
