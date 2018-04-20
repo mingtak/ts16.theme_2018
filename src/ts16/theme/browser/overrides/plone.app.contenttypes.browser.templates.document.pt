@@ -122,7 +122,7 @@ bigImage = ['bigImage_1', 'bigImage_2', 'bigImage_3', 'bigImage_4', 'bigImage_5'
         <!-- Heading -->
 
 
-       <div class="col-sm-12">
+       <div class="col-sm-12 col-md-7">
           <img style="max-width:100%" src="${portal/absolute_url}/++theme++artaward16/images/logo/logo03.jpg">    
        </div>
 

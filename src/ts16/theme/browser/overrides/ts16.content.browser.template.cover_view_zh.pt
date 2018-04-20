@@ -98,7 +98,7 @@ random.shuffle(brain)
 
     <!-- 文件展 -->
     <div class="main-page-section half_left_layout" id="document-show-section">
-      <div class="main-half-layout half_left_layout studio-bg"></div>
+      <div class="main-half-layout half_left_layout studio-bg" style="background-size:contain"></div>
       <!-- Right Content -->
       <div class="main-half-layout-container half_left_layout">
         <div class="about-us-con">
@@ -215,10 +215,10 @@ random.shuffle(brain)
 
         <div class="intro-small col-md-8 center-auto">
           <p style="font-family:微軟正黑體">獎項</p>
-          <p style="font-family:微軟正黑體">
-          台新藝術獎年度大獎:一名,頒發獎金新台幣一百五十萬元整、證書及獎座<br>
-          台新表演藝術獎:一名,頒發獎金新台幣一百萬元整、證書及獎座<br>
-          台新視覺藝術獎:一名,頒發獎金新台幣一百萬元整、證書及獎座
+          <p style="font-family:微軟正黑體; font-size:16px;">
+          台新藝術獎年度大獎 一名,頒發獎金新台幣一百五十萬元整、證書及獎座<br>
+          台新表演藝術獎 一名,頒發獎金新台幣一百萬元整、證書及獎座<br>
+          台新視覺藝術獎 一名,頒發獎金新台幣一百萬元整、證書及獎座
           </p>
         </div>
 
@@ -228,7 +228,7 @@ random.shuffle(brain)
             <!-- OUR SERVICES LIST -->
             <li class="col-sm-12"> 
                 <h6 style="font-family:微軟正黑體">
-                <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/final">第十六屆台新藝術獎決審委員</a>｜
+                <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/final">第十六屆台新藝術獎決審委員</a> ｜
 <a target="_blank" href="http://talks.taishinart.org.tw/juries/2017">第十六屆台新藝術獎提名觀察人</a></h6>
             </li>
           </ul>
@@ -291,13 +291,7 @@ random.shuffle(brain)
 <section id="section-5">
       <div class="container"> 
         <!-- Heading -->
-<!--        <div class="heading-block margin-bottom-30">
-          <h3 style="font-family:微軟正黑體">合作單位</h3>
-          <hr>
-        </div>
--->
-
-       <div class="col-sm-12">
+       <div class="col-sm-12 col-md-7">
           <img style="max-width:100%" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo03.jpg">
        </div>
 

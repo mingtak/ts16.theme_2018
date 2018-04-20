@@ -1,3 +1,7 @@
+.template-cover_view .client-sec {
+    padding: 0px;
+}
+
 .template-cover_view .testimonial {
     padding-top: 80px;
 }
@@ -36,6 +40,7 @@
 
 .template-cover_view .pad-t-b-130 {
     padding-bottom: 0px !important;
+    padding-top: 30px !important;
 }
 
 .template-cover_view .padding-bottom-90 {

@@ -71,7 +71,7 @@ random.shuffle(brain)
 
     <!-- 文件展 -->
     <div class="main-page-section half_left_layout" id="document-show-section">
-      <div class="main-half-layout half_left_layout studio-bg"></div>
+      <div class="main-half-layout half_left_layout studio-bg" style="background-size:contain"></div>
       <!-- Right Content -->
       <div class="main-half-layout-container half_left_layout">
         <div class="about-us-con">
@@ -128,7 +128,7 @@ The 16th Taishin Arts Award: A Special Exhibition of the Finalists specially inv
         <div class="nolist-style">
           <ul class="row">
             <!-- OUR SERVICES LIST -->
-            <li class="col-sm-12">
+            <li class="col-sm-10 center-auto">
               <h6 style="font-family:微軟正黑體"> <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/final">Final Selection Jury</a>｜<a target="_blank" href="http://talks.taishinart.org.tw/juries/2017">Annual Nomination Committee</a></h6>
               <p style="font-family:微軟正黑體; font-size:16px; line-height:26px" align="left">
 The Taishin Arts Award was founded in 2002 by the Taishin Bank Foundation for Arts and Culture, sponsored and supported by the Taishin International Bank. The Award acknowledges creative achievements in works of visual, performing and inter-disciplinary arts, a pioneering idea among arts awards at home and abroad. Its unique selection process includes nominations year-round by professionals, release of observations and art reviews, as well as yearly involvement of international jurors. In addition to its importance in recognizing the professional creative achievements in Taiwan, the Taishin Arts Award is also dedicated to establishing a platform enabling international networking for contemporary Taiwanese artists.<br>
@@ -162,12 +162,7 @@ The selection of the Taishin Arts Award includes the system of appointed nominat
 <section id="section-5">
       <div class="container"> 
         <!-- Heading -->
-<!--        <div class="heading-block margin-bottom-30">
-          <h3 style="font-family:微軟正黑體">合作單位</h3>
-          <hr>
-        </div>
--->
-       <div class="col-sm-12">
+       <div class="col-sm-12 col-md-7">
           <img style="max-width:100%" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo03.jpg">    
        </div>
       </div>
