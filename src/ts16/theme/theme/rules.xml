@@ -150,7 +150,7 @@
   <drop css:content="#edit-zone" />
 
   <!-- drop from theme file -->
-  <drop css:theme="#loader, section.home-slider" css:if-not-content="body.template-cover_view"/>
+  <drop css:theme="#loader, section.home-slider1" css:if-not-content="body.template-cover_view"/>
 
 </rules>
 </rules>
