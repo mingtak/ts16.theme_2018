@@ -55,7 +55,6 @@ random.shuffle(brain)
                       <a href="${view/portal/absolute_url}/en-us/award/post_en_view?id=${item/id}" target="_blank"
                          style="color:#fff; font-size:14px">${python:' / '.join(item.getObject().en_title.split('\n'))}</a>
                     </h6>
-                  <p>${python:item.Subject[0]}</p>
                 </div>
               </div>
             </article>
@@ -78,7 +77,7 @@ random.shuffle(brain)
         <div class="about-us-con">
           <div class="heading">
             <h3 class="v-hr"><span style="font-family:微軟正黑體">The 16th Taishin Arts Award:</span><br><span style="white-space:nowrap;font-family:微軟正黑體">A Special Exhibition of the Finalists</span></h3>
-          </div><span style="font-family:微軟正黑體; font-size:16px">2018/04/30-6/15 9:00am-7:00pm<br>
+          </div><span style="font-family:微軟正黑體; font-size:16px; line-height:26px">2018/04/30-6/15 9:00am-7:00pm<br>
 Taishin Tower | 1F, No.118, Sec.4, Ren-ai Rd.,Taipei City Taiwan<br><br>
 The 16th Taishin Arts Award: A Special Exhibition of the Finalists specially invites the principal architect of ArchiBlur Lab as well as architecture scholar Eric CHEN to design the exhibition installation. The exhibition makes use of the spiral staircase in the lobby of the Taishin Tower, elevating the exhibition space up to seven meters high. To create this unique space, the designer uses six gradually changing linear structures and textile layers to fabricate the varying transparency and dynamic of the space. As the staircase rises, the installation offers a constantly changing perspective and creates intersecting viewing points. Adopting such an approach of viewing, the design not only serves as a metaphor for the mutual relationship between the sixteen finalists as they are viewing and being viewed, but also corresponds to the contours and outlines of the key visual design. Through physical movement, the exhibition makes audiences become aware of and re-examine their own coordinates in time and space. When we try to understand or revisit a certain moment in history, will the distance between us be changed due to the temporal and spatial divide? Or, will we perhaps realize something at the moment of looking into each other’s eyes instead? 
 <br><br>
@@ -129,9 +128,9 @@ The 16th Taishin Arts Award: A Special Exhibition of the Finalists specially inv
         <div class="nolist-style">
           <ul class="row">
             <!-- OUR SERVICES LIST -->
-            <li class="col-sm-12"> <i class="icon-tools animate fadeInUp" data-wow-delay="0.4s"></i>
-                <h6 style="font-family:微軟正黑體"> <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/final">Final Selection Jury</a>｜<a target="_blank" href="http://talks.taishinart.org.tw/juries/2017">Annual Nomination Committee</a></h6>
-              <p style="font-family:微軟正黑體; font-size:14px" align="left">
+            <li class="col-sm-12">
+              <h6 style="font-family:微軟正黑體"> <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/final">Final Selection Jury</a>｜<a target="_blank" href="http://talks.taishinart.org.tw/juries/2017">Annual Nomination Committee</a></h6>
+              <p style="font-family:微軟正黑體; font-size:16px; line-height:26px" align="left">
 The Taishin Arts Award was founded in 2002 by the Taishin Bank Foundation for Arts and Culture, sponsored and supported by the Taishin International Bank. The Award acknowledges creative achievements in works of visual, performing and inter-disciplinary arts, a pioneering idea among arts awards at home and abroad. Its unique selection process includes nominations year-round by professionals, release of observations and art reviews, as well as yearly involvement of international jurors. In addition to its importance in recognizing the professional creative achievements in Taiwan, the Taishin Arts Award is also dedicated to establishing a platform enabling international networking for contemporary Taiwanese artists.<br>
 During its first decade, the Taishin Arts Award was bestowed on visual arts exhibitions and performing arts productions demonstrating the most outstanding creativity, or which best display the professional achievements of the arts community in a given year. Annual awards included the Performing Arts Award, Visual Arts Award and the Jury’s Special Award selected from works of either category. From the 12th to the 14th Taishin Arts Award (2013 to 2015), responding to the interdisciplinary trend in contemporary art as well as reflecting upon the present social phenomena and the vibrant forces that drove these phenomena, the Award was selected and given in an unclassified manner, and five prizes were awarded, including one "Annual Grand Prize." From the 15th Taishin Arts Award onward, in view of the inherent distinction of different arts, the Award judges and selects winners per category while choosing one "Annual Grand Prize" winner from all categories in order to accommodate greater potential and future development in artistic creation.<br>
 The selection of the Taishin Arts Award includes the system of appointed nominators, an internet channel for public involvement and discussion, a regular process of announcing nominations, semi-selection, and international jury selection, as well as the award ceremony. With the participation of specialists and the efforts and supports from all sectors, the Award also improves the cultural environment and bridges the distance between arts and the general public so that creative activities and elements of beauty are blended naturally into daily lives.
@@ -143,7 +142,7 @@ The selection of the Taishin Arts Award includes the system of appointed nominat
 
 
         <div class="intro-small col-md-12 center-auto">
-          <p style="font-family:微軟正黑體">Award</p>
+          <p style="font-family:微軟正黑體"><h5 style="text-align:center;">Award</h5></p>
           <p style="font-family:微軟正黑體">
 1. Taishin Annual Grand Prize, to receive a NT$1.5 million monetary award and trophy.<br>
 2. Taishin Performing Arts Award, to receive a NT$1million monetary award and trophy.<br>
@@ -168,12 +167,9 @@ The selection of the Taishin Arts Award includes the system of appointed nominat
           <hr>
         </div>
 -->
-       <div class="col-sm-5">
-          <p style="font-family:微軟正黑體"><img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo01.jpg"></p>
-        </div>
-        <div class="col-sm-7">
-          <p style="font-family:微軟正黑體"><img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo02.jpg"></p>
-        </div>
+       <div class="col-sm-12">
+          <img style="max-width:100%" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo03.jpg">    
+       </div>
       </div>
 </section>
 <!-- section-5 end -->

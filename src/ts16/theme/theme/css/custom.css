@@ -10,9 +10,17 @@
     width: 40%;
 }
 
+/* cover rwd start */
 .main-half-layout-container {
     width: 50%;
 }
+
+@media (max-width: 767px){
+    .main-half-layout-container {
+        width: 100%;
+    }
+}
+/* cover rwd end */
 
 #document-show-section {
     margin-top: 50px;

@@ -120,16 +120,12 @@ bigImage = ['bigImage_1', 'bigImage_2', 'bigImage_3', 'bigImage_4', 'bigImage_5'
 <section id="section-5">
       <div class="container">
         <!-- Heading -->
-        <div class="heading-block margin-bottom-30">
-          <h3 style="font-family:微軟正黑體">合作單位</h3>
-          <hr>
-        </div>
-        <div class="col-sm-5">
-          <p style="font-family:微軟正黑體"><img src="${portal/absolute_url}/++theme++artaward16/images/logo/logo01.jpg"></p>
-        </div>
-        <div class="col-sm-7">
-          <p style="font-family:微軟正黑體"><img src="${portal/absolute_url}/++theme++artaward16/images/logo/logo02.jpg"></p>
-        </div>
+
+
+       <div class="col-sm-12">
+          <img style="max-width:100%" src="${portal/absolute_url}/++theme++artaward16/images/logo/logo03.jpg">    
+       </div>
+
       </div>
 </section>
 <!-- section-5 end -->

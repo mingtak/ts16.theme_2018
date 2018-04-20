@@ -82,7 +82,6 @@ random.shuffle(brain)
                   <div class="portfolio-overlay"></div>
                 <div class="position-bottom">
                     <h4><a href="${item/getURL}">${item/Title}</a></h4>
-                  <p>${python:item.Subject[0]}</p>
                 </div>
               </div>
             </article>
@@ -142,7 +141,6 @@ random.shuffle(brain)
 日本橫濱國際表演藝術會議(TPAM)—亞洲重要表演藝術交流組織的總監丸岡廣美，致力於連結日本以及國際策展，創造藝術家與藝術家、藝術家與場館合作的重要推手。她如何看亞洲當代表演藝術的趨勢？近年來台灣表演藝術發展的觀察？以及表演藝術策展人的國際觀與策展方向？<br>
 鄧樹榮先生是香港著名導演及戲劇教育家，現任「鄧樹榮戲劇工作室」藝術總監，擅於將西方的戲劇用東方的演繹方式，將作品帶往國際舞台。他如何看中、港、澳、台劇場創作的趨勢？近年來亞洲劇場與全球表演藝術發展的關係，以及劇場教育該如何在華語社會繼續推進？<br>
 <br><br>
-※現場日文逐步口譯<br>
 ※本活動免費參加，請先上網報名 <a target="_blank" href="http://www.taishinart.org.tw/chinese/3_event/detail.php?ID=615">立即報名</a>
          </p>
         </div>
@@ -200,18 +198,14 @@ random.shuffle(brain)
         <div class="nolist-style">
           <ul class="row">
             <!-- OUR SERVICES LIST -->
-            <li class="col-sm-12"> <!-- <i class="icon-tools animate fadeInUp" data-wow-delay="0.4s"></i> -->
-<!--                <h6 style="font-family:微軟正黑體">
-                <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/final">第十六屆台新藝術獎決審委員</a>｜
-<a target="_blank" href="http://talks.taishinart.org.tw/juries/2017">第十六屆台新藝術獎提名觀察人</a></h6>
--->
+            <li class="col-sm-10 center-auto"> <!-- <i class="icon-tools animate fadeInUp" data-wow-delay="0.4s"></i> -->
               <p style="font-family:微軟正黑體; font-size:16px; line-height:26px" align="left">
 「台新藝術獎」於2002年由台新銀行贊助支持的「台新銀行文化藝術基金會」所創設，同時觀照視覺、表演與跨領域藝術類的創作，開啟了國內、外藝術獎項頒發之先河。透過獨創的評選機制，包括全年專業提名、觀察與藝術評論的發表，同時結合年度國際評審的參與，「台新藝術獎」不僅止於肯定台灣專業創作成果的重要獎項，更努力建構足以銜接台灣當代創作者與國際對話的平台。<br><br>
  「台新藝術獎」前十年以獎勵當年度最具傑出創意表現，或最能突顯專業成就的視覺藝術展及表演藝術節目為主；每年頒發年度表演藝術大獎、年度視覺藝術大獎，及跨領域評選的「評審團特別獎」。第12至14屆（2013至2015年），因應當代藝術跨越疆界之趨勢，對當下社會現象的反思與驅動具豐碩能量之特質，改以不分類方式評選與給獎，授予五個獎項，其中包括一件「年度大獎」，第15屆起，顧及藝術類型本質上有其殊異，獎項調整為分類給獎，惟保留「年度大獎」不分類精神，以容納藝術創作更大的可能性與未來性。<br><br>
  「台新藝術獎」的運作，包括專責提名觀察人的機制、透過網路功能建立公眾參與討論的管道、定期公佈提名、複選、國際決選的程序，對外推廣宣達和封冠的儀典。藉由專業人士的參與和各方力量的投入，使一個藝術桂冠的打造，能兼及文化環境的改善，及縮短藝術與民眾的距離，讓創意的活動與美感的事物自發地融入生活。 
               </p>
             </li>
-            <h6 style="font-family:微軟正黑體" align="center">台新藝術獎第十六屆 評選辦法 
+            <h6 style="font-family:微軟正黑體" align="center">第十六屆台新藝術獎 評選辦法 
               <a target="_blank" href="${view/portal/absolute_url}/7b2c5341516d5c4653f065b085dd8853734e8a5590788fa66cd5.pdf/edit/++widget++form.widgets.file/@@download/%E7%AC%AC%E5%8D%81%E5%85%AD%E5%B1%86%E5%8F%B0%E6%96%B0%E8%97%9D%E8%A1%93%E7%8D%8E%E8%A9%95%E9%81%B8%E8%BE%A6%E6%B3%95.pdf">下載</a>
             </h6>
             <!-- Unlimited Features -->
@@ -252,16 +246,15 @@ random.shuffle(brain)
       <div class="container" id="for-this-section">
         <!-- Heading -->
         <div class="heading-block margin-bottom-30">
-          <h3 style="font-family:微軟正黑體">我心目中的得主</h3>
+          <h3 style="font-family:微軟正黑體">【我心目中的得主】</h3>
           <hr>
         </div>
         <div class="intro-small col-md-8 center-auto">
-          <p style="font-family:微軟正黑體">── 為心中所屬，投下鼓舞的一票！──</p>
+          <p style="font-family:微軟正黑體">── 專家有專家的說法，我有我的摯愛！為心中所屬，投下鼓舞的一票！──</p>
 	  <p style="font-family:微軟正黑體">
-十六件入圍作品裡，哪一件最讓您印象深刻？<br>
-選出您心中的大獎得主，投您所好，還能把好禮帶回家！<br>
-5/1 (二)起─6/1(五)12:00PM止<br>
-以E-Mail方式行投票，需投滿三票，作品不得重複，每個帳號均僅能進行一次投票
+當「我心目中的得主」得獎成真，您將有機會抽獎得好禮！<br>
+─ 5/1起，投票啟動 ─<br>
+（以E-Mail進行投票，需投滿三票，作品不得重複投票，每個帳號均僅能進行一次投票）  
           </p>
         </div>
         <!-- PORTOFLIO ITEMS FILTER -->
@@ -279,7 +272,9 @@ random.shuffle(brain)
       <div class="container">
         <div class="heading-block">
           <h3 style="font-family:微軟正黑體">留言區</h3><BR><BR><BR>
-          <P style="font-family:微軟正黑體; font-size:14px">如在本屆16組入圍作品之外，您尚有心目中的年度佳作卻未入圍之遺憾，歡迎您針對本屆未入圍之遺珠作品，在留言區表達您的看法。凡在留言區寫下心目中遺珠作品名稱及理由，我們就送您ARTalks票夾。</P>
+          <P style="font-family:微軟正黑體; font-size:16px; line-height:26px">
+如在本屆16組入圍作品之外，您尚有心目中的年度佳作卻未入圍之遺憾，歡迎您針對本屆未入圍之遺珠作品，在留言區表達您的看法。凡在留言區寫下心目中遺珠作品名稱及理由，我們就送您ARTalks票夾。
+          </P>
         </div>
         <div class="news-post">
           <div class="row">
@@ -301,12 +296,11 @@ random.shuffle(brain)
           <hr>
         </div>
 -->
-       <div class="col-sm-5">
-          <p style="font-family:微軟正黑體"><img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo01.jpg"></p>
-        </div>
-        <div class="col-sm-7">
-          <p style="font-family:微軟正黑體"><img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo02.jpg"></p>
-        </div>
+
+       <div class="col-sm-12">
+          <img style="max-width:100%" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo03.jpg">
+       </div>
+
       </div>
 </section>
 <!-- section-5 end -->
