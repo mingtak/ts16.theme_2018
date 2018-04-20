@@ -22,15 +22,7 @@ bigImage = ['bigImage_1', 'bigImage_2', 'bigImage_3', 'bigImage_4', 'bigImage_5'
   <section class="sub-bnr" data-stellar-background-ratio="0.5" id="path-section">
     <div class="position-center-center">
       <div class="container">
-<!--        <h4>${context/title}</h4> -->
-
         <!-- Breadcrumb -->
-<!--        <ol class="breadcrumb">
-          <li><a href="${portal/absolute_url}/${lang}"><img src="${portal/absolute_url}/++theme++artaward16/images/logo/30Taishin.png"></a></li>
-          <li>${python:context.getParentNode().title}</li>
-          <li class="active">${context/title}</li>
-        </ol>
--->
       </div>
     </div>
   </section>

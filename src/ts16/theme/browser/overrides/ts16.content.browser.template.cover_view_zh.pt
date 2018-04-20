@@ -24,22 +24,21 @@
       <div class="container">
         <!-- Heading -->
         <div class="heading-block margin-bottom-20">
-          <a name="aaa"></a><h2><span style="font-family:微軟正黑體">最新消息</span></h2><br>
-          <h4>- NEWS - </h4><br><br>
+          <a name="aaa"></a><h3 style="font-weight: 500; font-size: 30px;"><span style="font-family:微軟正黑體">最新消息</span></h3><br>
         </div>
         <div class="row">
           <!-- Our Mission -->
           <div class="col-sm-12">
             <article>
               <tal:item repeat="item view/getNews">
-                <h3 style="font-family:微軟正黑體" class="${python:'more' if repeat['item'].index > 2 else ''}">
+                <h3 style="font-family:微軟正黑體; line-height:26px" class="${python:'more' if repeat['item'].index > 2 else ''}">
                   <span>${python:item.created.strftime('%Y.%m.%d')}</span>
                   <tal:case switch="item/Type">
                       <a tal:case="string:News Item" href="${item/getURL}">${item/Title}</a>
                       <a tal:case="string:Link" target="_blank" href="${item/getRemoteUrl}">${item/Title}</a>
                   </tal:case>
                 </h3>
-                <br class="${python:'more' if repeat['item'].index > 2 else ''}">
+<!--                <br class="${python:'more' if repeat['item'].index > 2 else ''}"> -->
               </tal:item>
               <p></p>
               <a href="javascript:void(0)" class="read-more-news">Read More</a>
@@ -81,7 +80,7 @@ random.shuffle(brain)
               <div class="portfolio-image"> <img alt="${item/Title}" src="${item/getURL}/@@images/image/large">
                   <div class="portfolio-overlay"></div>
                 <div class="position-bottom">
-                    <h4><a href="${item/getURL}">${item/Title}</a></h4>
+                    <h4 style="line-height:18px"><a href="${item/getURL}">${item/Title}</a></h4>
                 </div>
               </div>
             </article>
@@ -129,16 +128,21 @@ random.shuffle(brain)
           <h3><span style="font-family:微軟正黑體">決選委員講座</span></h3><br><br><br>
         </div>
         <div class="col-sm-6" style="padding-right: 40px">
-          <p style="font-family:微軟正黑體;color:#fff; font-size:20px">決選委員講座(一)</p>
+          <p style="font-family:微軟正黑體;color:#fff; font-size:20px">決選委員講座（一）</p>
           <p style="font-family:微軟正黑體;color:#000; font-size:18px"><b>國際決審會客室：亞洲當代表演藝術的趨勢</b></p>
           <p style="font-family:微軟正黑體;color:#fff; font-size:16px">
-        時間│ 6/2 (六) 7:00-9:30pm<BR>
-        地點│ 台新金控大樓二樓元廳 (台北市仁愛路四段118號2樓)<BR>
-        主講│ <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/hiromimaruoka">丸岡廣美Hiromi Maruoka</a>／日本TPAM橫濱國際表演藝術會議總監<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/tangshuwing">鄧樹榮</a>／香港鄧樹榮戲劇工作室藝術總監<BR>
-        主持│ <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/linyupin">林于竝</a>／國立台北藝術大學戲劇系副教授<BR><br><br><br>
-台新銀行文化藝術基金會特別邀請本屆藝術獎國際決審丸岡廣美(Hiromi Maruoka)女士以及鄧樹榮先生，與大眾分享多年策展及創作經驗，以及亞洲當代表演藝術的趨勢。<br>
-日本橫濱國際表演藝術會議(TPAM)—亞洲重要表演藝術交流組織的總監丸岡廣美，致力於連結日本以及國際策展，創造藝術家與藝術家、藝術家與場館合作的重要推手。她如何看亞洲當代表演藝術的趨勢？近年來台灣表演藝術發展的觀察？以及表演藝術策展人的國際觀與策展方向？<br>
+        時間│ 6／2 (六) 7：00-9：30pm<BR>
+        地點│ 台新金控大樓二樓元廳 (台北市仁愛路四段118號2樓)<BR><br>
+        主講<br>
+<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/hiromimaruoka">丸岡廣美Hiromi Maruoka</a>／日本TPAM橫濱國際表演藝術會議總監<BR>
+<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/tangshuwing">鄧樹榮</a>／香港鄧樹榮戲劇工作室藝術總監<BR>
+<span style="font-size:50px"></span>
+        主持<br>
+<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/linyupin">林于竝</a>／國立台北藝術大學戲劇系副教授<BR><br><br><br>
+台新銀行文化藝術基金會特別邀請本屆藝術獎國際決審丸岡廣美（Hiromi Maruoka）女士以及鄧樹榮先生，與大眾分享多年策展及創作經驗，以及亞洲當代表演藝術的趨勢。<br>
+<span style="font-size:50px"></span>
+日本橫濱國際表演藝術會議（TPAM）—亞洲重要表演藝術交流組織的總監丸岡廣美，致力於連結日本以及國際策展，創造藝術家與藝術家、藝術家與場館合作的重要推手。她如何看亞洲當代表演藝術的趨勢？近年來台灣表演藝術發展的觀察？以及表演藝術策展人的國際觀與策展方向？<br>
+<span style="font-size:50px"></span>
 鄧樹榮先生是香港著名導演及戲劇教育家，現任「鄧樹榮戲劇工作室」藝術總監，擅於將西方的戲劇用東方的演繹方式，將作品帶往國際舞台。他如何看中、港、澳、台劇場創作的趨勢？近年來亞洲劇場與全球表演藝術發展的關係，以及劇場教育該如何在華語社會繼續推進？<br>
 <br><br>
 ※本活動免費參加，請先上網報名 <a target="_blank" href="http://www.taishinart.org.tw/chinese/3_event/detail.php?ID=615">立即報名</a>
@@ -148,13 +152,16 @@ random.shuffle(brain)
           <p style="font-family:微軟正黑體;color:#fff; font-size:20px">決選委員講座（二）</p>
           <p style="font-family:微軟正黑體;color:#000; font-size:18px"><b>評什麼？—台新藝術獎得獎作品之我見</b></p>
           <p style="font-family:微軟正黑體;color:#fff; font-size:16px">
-        時間│ 6/3 (日) 2:00-4:00pm<BR>
-        地點│ 台新金控大樓五樓 (台北市仁愛路四段118號5樓)<BR>
-        與談│ <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/huanghaiming">黃海鳴</a>／國立台北教育大學藝術與造型設計學系兼任教授<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/linyupin">林于竝</a>／國立台北藝術大學戲劇系副教授<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/chiachijasonwang">王嘉驥</a>／策展人、藝評家 <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/liushouyuo">劉守矅</a>／資深劇場導演、演員、舞者<br>
-        主持│ 陳泰松／ 台新銀行文化藝術基金會總監<BR><br>
+        時間│ 6／3 (日) 2：00-4：00pm<BR>
+        地點│ 台新金控大樓五樓 (台北市仁愛路四段118號5樓)<BR><br>
+        與談<br>
+<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/huanghaiming">黃海鳴</a>／國立台北教育大學藝術與造型設計學系兼任教授<br>
+<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/linyupin">林于竝</a>／國立台北藝術大學戲劇系副教授<br>
+<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/chiachijasonwang">王嘉驥</a>／策展人、藝評家 <br>
+<a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/liushouyuo">劉守矅</a>／資深劇場導演、演員、舞者<br>
+<span style="font-size:50px"></span>
+        主持<br>
+陳泰松／台新銀行文化藝術基金會總監<BR><br>
         本屆台新藝術獎歷經九位提名觀察人全年度遴選推薦的16組入圍作品，將由七位海內外專業人士組成的決選委員會議連續數天討論後，於6月2日頒獎典禮現場揭曉三大獎項得主。在得獎名單揭曉後的次日，特別安排四位國內委員與大眾對話，分享評選觀點、跨領域的評選經驗，進而剖析近年台灣當代藝術現況、趨勢與走向。<br>
 <br><br>
         ※本活動免費參加，請先上網報名 <a target="_blank" href="http://www.taishinart.org.tw/chinese/3_event/detail.php?ID=615">立即報名</a>
@@ -181,6 +188,68 @@ random.shuffle(brain)
       })
     })
   </script>
+
+  <script>
+$(document).ready(function(){
+//------- End Quantity Increase & Decrease Value --------//
+
+            // ========================== //
+            // 2018 Countdown JS
+            // ========================== //
+
+            var countdown = new Date("2018/6/2 14:00:00");
+
+            function getRemainingTime(endtime) {
+                var milliseconds = Date.parse(endtime) - Date.parse(new Date());
+                var seconds = Math.floor(milliseconds / 1000 % 60);
+                var minutes = Math.floor(milliseconds / 1000 / 60 % 60);
+                var hours = Math.floor(milliseconds / (1000 * 60 * 60) % 24);
+                var days = Math.floor(milliseconds / (1000 * 60 * 60 * 24));
+
+                return {
+                    'total': milliseconds,
+                    'seconds': seconds,
+                    'minutes': minutes,
+                    'hours': hours,
+                    'days': days
+                    };
+            }
+
+            function initClock(id, endtime) {
+                var counter = document.getElementById(id);
+                var daysItem = counter.querySelector('.js-countdown-days');
+                var hoursItem = counter.querySelector('.js-countdown-hours');
+                var minutesItem = counter.querySelector('.js-countdown-minutes');
+                var secondsItem = counter.querySelector('.js-countdown-seconds');
+
+                    function updateClock() {
+                        var time = getRemainingTime(endtime);
+
+                        daysItem.innerHTML = time.days;
+                        hoursItem.innerHTML = ('0' + time.hours).slice(-2);
+                        minutesItem.innerHTML = ('0' + time.minutes).slice(-2);
+                        secondsItem.innerHTML = ('0' + time.seconds).slice(-2);
+
+                        if (time.total <= 0) {
+                          clearInterval(timeinterval);
+                        }
+                        }
+
+                        updateClock();
+                        var timeinterval = setInterval(updateClock, 1000);
+            }
+
+
+        if(document.getElementById("js-countdown")){
+             initClock('js-countdown', countdown);
+        }
+
+
+});
+
+  </script>
+
+
 </section>
 <!-- section-1 end -->
 
@@ -216,9 +285,9 @@ random.shuffle(brain)
         <div class="intro-small col-md-8 center-auto">
           <p style="font-family:微軟正黑體">獎項</p>
           <p style="font-family:微軟正黑體; font-size:16px;">
-          台新藝術獎年度大獎 一名,頒發獎金新台幣一百五十萬元整、證書及獎座<br>
-          台新表演藝術獎 一名,頒發獎金新台幣一百萬元整、證書及獎座<br>
-          台新視覺藝術獎 一名,頒發獎金新台幣一百萬元整、證書及獎座
+          台新藝術獎年度大獎 一名，頒發獎金新台幣一百五十萬元整、證書及獎座<br>
+          台新表演藝術獎&nbsp;&nbsp;一名，頒發獎金新台幣一百萬元整、證書及獎座<br>
+          台新視覺藝術獎&nbsp;&nbsp;一名，頒發獎金新台幣一百萬元整、證書及獎座
           </p>
         </div>
 
@@ -298,13 +367,6 @@ random.shuffle(brain)
       </div>
 </section>
 <!-- section-5 end -->
-
-
-
-
-
-
-
 
 </metal:block>
 </metal:content-core>

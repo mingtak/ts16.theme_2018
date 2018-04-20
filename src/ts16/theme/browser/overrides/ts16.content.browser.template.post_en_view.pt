@@ -65,8 +65,8 @@ bigImage = ['bigImage_1', 'bigImage_2', 'bigImage_3', 'bigImage_4', 'bigImage_5'
                 <span class="code">${python:view.post.en_description.split('\n')[1]}</span>
               </div>
             </div>
-            <p><b>${python:view.post.en_description.split('\n')[2]}</b><br>
-              <span class="description">${python:view.post.en_description.split('\n')[3]}</span>
+            <p style="text-align: justify;"><b>${python:view.post.en_description.split('\n')[2]}</b><br>
+              <span class="description" tal:content="structure python:view.post.en_description.split('\n')[3]"></span>
             </p>
             <hr>
             

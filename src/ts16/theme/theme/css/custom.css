@@ -1,9 +1,25 @@
+.template-post_en_view span.photoer {
+    float: right;
+}
+
+.template-cover_view .about-ser h3 {
+    font-size: 16px;
+}
+
+.template-cover_view .about-ser h3 a{
+    font-size: 16px;
+}
+
+.template-cover_view .heading-block {
+    margin-bottom:30px;
+}
+
 .template-cover_view .client-sec {
     padding: 0px;
 }
 
 .template-cover_view .testimonial {
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .main-half-layout-container {
@@ -27,7 +43,7 @@
 /* cover rwd end */
 
 #document-show-section {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .template-newsitem_view #content p {
@@ -68,7 +84,7 @@
 
 .sub-bnr {
     min-height: 230px;
-    background-size: contain;
+    background-size: cover;
 }
 
 .images-slider {
@@ -118,7 +134,7 @@ p {
 }
 
 h5.post-title {
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 .item-detail-page .price {
@@ -127,4 +143,46 @@ h5.post-title {
 
 .template-document_view span.photoer {
     float: right;
+}
+
+/* countdown */
+
+.countdown-area .countdown .countdown-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 25px;
+    position: relative;
+    width: 25%;
+    float: left;
+}
+
+.countdown-area .countdown .countdown-item .countdown-timer {
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 76px;
+    margin-bottom: 5px;
+}
+
+.countdown-label {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.countdown .countdown-item .countdown-timer {
+    background: -webkit-linear-gradient(-180deg, #55b, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.template-cover_view .countdown-area {
+    padding-top: 80px;
 }
