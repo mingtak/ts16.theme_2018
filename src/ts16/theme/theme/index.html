@@ -4,6 +4,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="author" content="M_Adnan" />
+<meta content="2018第十六屆台新藝術獎" name="twitter:title" />
+<meta content="2018第十六屆台新藝術獎" property="og:site_name" />
+<meta content="2018第十六屆台新藝術獎" property="og:title" />
+<meta content="「台新藝術獎」於2002年由台新銀行贊助支持的「台新銀行文化藝術基金會」所創設，同時觀照視覺、表演與跨領域藝術類的創作，開啟了國內、外藝術獎項頒發之先河。" name="twitter:description" />
+
+<meta content="http://16award.taishinart.org.tw/zh-tw" name="twitter:url" />
+<meta content="「台新藝術獎」於2002年由台新銀行贊助支持的「台新銀行文化藝術基金會」所創設，同時觀照視覺、表演與跨領域藝術類的創作，開啟了國內、外藝術獎項頒發之先河。" property="og:description" />
+<meta content="http://16award.taishinart.org.tw/zh-tw" property="og:url" />
+<meta content="http://16award.taishinart.org.tw/++theme++artaward16/images/logo/Taishin.svg.png" name="twitter:image" />
+<meta content="http://16award.taishinart.org.tw/++theme++artaward16/images/logo/Taishin.svg.png" property="og:image" />
+<meta content="image/png" property="og:image:type" />
 <!-- Document Title -->
 <title>第十六屆台新藝術獎</title>
 
@@ -118,8 +129,11 @@
   </header>
   <!-- End Header --> 
   
-  <section class="home-slider1">
-    <div class="tp-banner-container1" style="background:#8b91ff;">
+  <section class="home-slider1" style="background:#8b91ff;">
+    <div class="tp-banner-container1"
+         style="backgroundq: url('ts16/++theme++artaward16/images/cover.jpg');
+                background-position: right bottom;
+                background-repeat: no-repeat;">
       <div class="tp-banner1 container">
         <ul class="row" style="margin-bottom:0">
           <!-- SLIDE  -->
@@ -137,39 +151,33 @@
               data-masterspeed="300"  data-saveperformance="off"
               class="col-md-7 col-sm-12 center-auto1">
 
-
+<h6 style="color:#fff; padding-left:8px;"><span style="font-size:18px">6/2 14:00</span> <span style="letter-spacing:2px;">頒獎倒數</span></h6>
 <div class="countdown-area">
 						<div class="countdown d-flex justify-content-center justify-content-md-end" id="js-countdown">
 							<div class="countdown-item">
-								<div class="countdown-timer js-countdown-days time" aria-labelledby="day-countdown">
-
-								</div>
-
-								<div class="countdown-label" id="day-countdown">日</div>
+								<span class="countdown-timer js-countdown-days time" aria-labelledby="day-countdown">
+								</span>
+                                                                <span class="countdown-label2" id="day-countdown">天</span>
 							</div>
 
 							<div class="countdown-item">
-								<div class="countdown-timer js-countdown-hours" aria-labelledby="hour-countdown">
-
-								</div>
-
-								<div class="countdown-label" id="hour-countdown">時</div>
+								<span class="countdown-timer js-countdown-hours" aria-labelledby="hour-countdown">
+								</span>
+								<span class="countdown-label2" id="hour-countdown">時</span>
 							</div>
 
 							<div class="countdown-item">
-								<div class="countdown-timer js-countdown-minutes" aria-labelledby="minute-countdown">
+								<span class="countdown-timer js-countdown-minutes" aria-labelledby="minute-countdown">
+								</span>
 
-								</div>
-
-								<div class="countdown-label" id="minute-countdown">分</div>
+								<span class="countdown-label2" id="minute-countdown">分</span>
 							</div>
 
 							<div class="countdown-item">
-								<div class="countdown-timer js-countdown-seconds" aria-labelledby="second-countdown">
+								<span class="countdown-timer js-countdown-seconds" aria-labelledby="second-countdown">
+								</span>
 
-								</div>
-
-								<div class="countdown-label text" id="second-countdown">秒</div>
+								<span class="countdown-label2 text" id="second-countdown">秒</span>
 							</div>
 
 						</div>
@@ -564,10 +572,11 @@
   </footer>
   <!-- End Footer --> 
   
-  <!-- GO TO TOP  --> 
-  <div>
+  <!-- GO TO TOP 直達車(尚未開始)--> 
+<!--  <div>
   <a href="/ts16/zh-tw#for-this-section" class="cd-top"><img src="images/logo/vote_btn.png"/></a>
   </div>
+-->
   <!-- GO TO TOP End --> 
 </div>
 <!-- End Page Wrapper --> 
@@ -601,6 +610,13 @@
 </script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ad7ffc381cd3604"></script>
+<script>
+$(document).ready(function() {  
+    $(document).get(0).oncontextmenu = function() {
+        return false;
+    };
+});
+</script>
 
 </body>
 </html>

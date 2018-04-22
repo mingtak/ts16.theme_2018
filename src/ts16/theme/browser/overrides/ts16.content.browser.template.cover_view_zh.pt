@@ -285,9 +285,9 @@ $(document).ready(function(){
         <div class="intro-small col-md-8 center-auto">
           <p style="font-family:微軟正黑體">獎項</p>
           <p style="font-family:微軟正黑體; font-size:16px;">
-          台新藝術獎年度大獎 一名，頒發獎金新台幣一百五十萬元整、證書及獎座<br>
-          台新表演藝術獎&nbsp;&nbsp;一名，頒發獎金新台幣一百萬元整、證書及獎座<br>
-          台新視覺藝術獎&nbsp;&nbsp;一名，頒發獎金新台幣一百萬元整、證書及獎座
+          年度大獎&nbsp;&nbsp;一名，頒發獎金新台幣一百五十萬元整、證書及獎座<br>
+          表演藝術獎&nbsp;&nbsp;一名，頒發獎金新台幣一百萬元整、證書及獎座<br>
+          視覺藝術獎&nbsp;&nbsp;一名，頒發獎金新台幣一百萬元整、證書及獎座
           </p>
         </div>
 
@@ -361,7 +361,7 @@ $(document).ready(function(){
       <div class="container"> 
         <!-- Heading -->
        <div class="col-sm-12 col-md-7">
-          <img style="max-width:100%" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo04.png">
+          <img style="max-width:100%" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo05.jpg">
        </div>
 
       </div>
