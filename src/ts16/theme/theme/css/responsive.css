@@ -461,7 +461,8 @@ header .navbar .nav ul.dropdown-menu li.dropdown-submenu:after {
 	display: block;
 }
 header .is-sticky .sticky {
-	position: relative !important;
+/* RWD still sticky */
+	/* position: relative !important; */
 }
 .ownmenu .nav .dropdown-submenu .dropdown-menu {
 	background: #fff !important;
