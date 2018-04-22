@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='ts16.theme',
-    version='1.0a1',
+    version='1.01',
     description="Theme for Taishin Art Award 16",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
