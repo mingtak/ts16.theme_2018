@@ -3,6 +3,7 @@
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:v-on="http://www.vuejs.org"
       lang="en"
       metal:use-macro="context/main_template/macros/master"
       i18n:domain="ts16.content">
@@ -324,12 +325,84 @@ $(document).ready(function(){
 當「我心目中的得主」得獎成真，您將有機會抽獎得好禮！<br>
 ─ 5/4起，投票啟動 ─<br>
 （以E-Mail進行投票，需投滿三票，作品不得重複投票，每個帳號均僅能進行一次投票）  
-          </p>
+          </p><br>
         </div>
         <!-- PORTOFLIO ITEMS FILTER -->
+
+
+
         <!-- Item Start -->
-        <div class="items with-space col-3 popup-gallery">
+        <div class="items with-space col-4 popup-gallery">
+
+          <!-- ITEM -->
+          <div tal:repeat="item brain"
+               class="cbp-item portfolio-item web mob-app photo ui">
+            <article>
+              <div class="portfolio-image">
+                  <img alt="${item/Title}" src="${item/getURL}/@@images/image/large">
+                 <!-- <div class="portfolio-overlay"></div> -->
+                <div class="position-bottom poll-me">
+                    <a href="javascript:void(0)" class="img-popicon" title="" id="${item/UID}" v-on:click="poll($event)">
+                      <i class="ion-android-checkbox-outline" style="font-size:30px"></i>
+                    </a>
+                    <h4><a href="${item/getURL}" target="_blank">${item/Title}</a></h4>
+                  <p>累積票數:000</p>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
+
+          <div class="text-center margin-top-50 animate fadeInUp" id="confirm-vote"
+               data-wow-delay="0.4s">
+            <input type='email' id='vote-email' placeholder='請輸入有效email' style="width:250px; height:40px">
+            <a href="javascript:void(0)" class="btn btn-inverse" v-on:click="confirmVote($event)>確認投票</a>
+          </div>
+
+
+<script src="${view/portal/absolute_url}/++theme++artaward16/js/vue.min.js"></script>
+
+<script>
+
+var vm = new Vue({
+  el: '#for-this-section',
+  data: {
+    vote: [],
+    voteMessage: 'hello world',
+    alert_1: '請選擇3個項目',
+    alert_2: '請勾選確認「願意請勾選」以完成投票',
+    alert_final: '投標完成，感謝您的投票',
+  },
+
+  methods: {
+    poll: function (event) {
+        element = event.currentTarget;
+        id = element.getAttribute('id'); //UID
+        if(vm.vote.indexOf(id) > -1){
+           vm.vote.pop(id)
+            $('#' + id + ' i').css('color', '')
+            return;
+        }
+
+        if(vm.vote.length < 3){            /* 取消 */
+            vm.vote.push(id);
+            $('#' + id + ' i').css('color', 'red')
+            return;
+        };
+        if( vm.vote.length >= 3 ){
+            alert('只能投3票');
+            return;
+        };
+    },
+
+  }
+});
+
+</script>
+
+
+
+
       </div>
 
 </section>
