@@ -1,3 +1,13 @@
+.template-cover_view .poll-me {
+    opacity: 1;
+    bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.template-cover_view .portfolio .position-bottom h4 {
+    line-height: 14px;
+}
+
 .template-post_en_view span.photoer {
     float: right;
 }

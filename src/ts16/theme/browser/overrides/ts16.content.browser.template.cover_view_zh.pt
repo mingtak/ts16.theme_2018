@@ -341,12 +341,18 @@ $(document).ready(function(){
               <div class="portfolio-image">
                   <img alt="${item/Title}" src="${item/getURL}/@@images/image/large">
                  <!-- <div class="portfolio-overlay"></div> -->
-                <div class="position-bottom poll-me">
+                <div class="position-bottom poll-me" id="poll-me-${item/UID}">
+<!--                    <a href="javascript:void(0)" class="img-popicon" title="" id="${item/UID}" v-on:click="poll($event)">
+                      <i class="ion-android-checkbox-outline" style="font-size:30px"></i>
+                    </a> -->
+                    <h4><a href="${item/getURL}" target="_blank">${item/Title}</a></h4>
+                  <p>
                     <a href="javascript:void(0)" class="img-popicon" title="" id="${item/UID}" v-on:click="poll($event)">
                       <i class="ion-android-checkbox-outline" style="font-size:30px"></i>
                     </a>
-                    <h4><a href="${item/getURL}" target="_blank">${item/Title}</a></h4>
-                  <p>累積票數:${python:item.getObject().vote}</p>
+
+累積票數:${python:item.getObject().vote}
+</p>
                 </div>
               </div>
             </article>
@@ -373,6 +379,14 @@ var vm = new Vue({
     alert_final: '投標完成，感謝您的投票',
   },
 
+/* 定格
+.portfolio-item article .position-bottom.poll-me {
+    opacity: 1;
+    bottom: 0px;
+    margin-bottom: 0px;
+}
+*/
+
   methods: {
     poll: function (event) {
         element = event.currentTarget;
@@ -380,12 +394,14 @@ var vm = new Vue({
         if(vm.vote.indexOf(id) > -1){
            vm.vote.pop(id)
             $('#' + id + ' i').css('color', '')
+            $('#poll-me-' + id).css('opacity', '').css('bottom', '').css('margin-bottom', '')
             return;
         }
 
-        if(vm.vote.length < 3){            /* 取消 */
+        if(vm.vote.length < 3){
             vm.vote.push(id);
             $('#' + id + ' i').css('color', 'red')
+            $('#poll-me-' + id).css('opacity', '1').css('bottom', '0px').css('margin-bottom', '0px')
             return;
         };
         if( vm.vote.length >= 3 ){
