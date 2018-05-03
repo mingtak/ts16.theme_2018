@@ -21,7 +21,7 @@
 <section id="section-1">
 
     <!-- 最新消息 -->
-    <section class="about-ser pad-t-b-130" id="news-section">
+    <section class="about-ser pad-t-b-130" id="news-section2">
       <div class="container">
         <!-- Heading -->
         <div class="heading-block margin-bottom-20">
@@ -41,6 +41,7 @@
                 </h3>
 <!--                <br class="${python:'more' if repeat['item'].index > 2 else ''}"> -->
               </tal:item>
+<div id="section-2-head"></div>
               <p></p>
               <a href="javascript:void(0)" class="read-more-news">Read More</a>
             </article>
@@ -50,7 +51,7 @@
     </section>
 
     <!-- 入圍作品 -->
-    <section class="portfolio port-wrap pad-t-b-130" id="section-2-head">
+    <section class="portfolio port-wrap pad-t-b-130" id="section-2-head2">
       <div class="container">
         <!-- Heading -->
         <div class="heading-block margin-bottom-30">
@@ -78,8 +79,10 @@ random.shuffle(brain)
 <tal:item repeat="item brain">
           <div class="cbp-item portfolio-item ${python:item.Subject[0]}">
             <article>
-              <div class="portfolio-image"> <img alt="${item/Title}" src="${item/getURL}/@@images/image/large">
+              <div class="portfolio-image">
+                  <img alt="${item/Title}" src="${item/getURL}/@@images/image/large">
                   <div class="portfolio-overlay"></div>
+<span id="document-show-section" tal:condition="repeat/item/end">
                 <div class="position-bottom">
                     <h4 style="line-height:18px"><a href="${item/getURL}">${item/Title}</a></h4>
                 </div>
@@ -88,6 +91,7 @@ random.shuffle(brain)
           </div>
 </tal:item>
         </div>
+<div id="document-show-section2"></div>
         <!-- LOAD MORE -->
 <!--        <div class="text-center margin-top-50 animate fadeInUp" data-wow-delay="0.4s">
             <a href="#section-2-head" class="btn btn-inverse">READ MORE</a>
@@ -97,7 +101,7 @@ random.shuffle(brain)
     </section>
 
     <!-- 文件展 -->
-    <div class="main-page-section half_left_layout" id="document-show-section">
+    <div class="main-page-section half_left_layout" id="document-show-section2">
       <div class="main-half-layout half_left_layout studio-bg" style="background-size:contain"></div>
       <!-- Right Content -->
       <div class="main-half-layout-container half_left_layout">
@@ -110,7 +114,7 @@ random.shuffle(brain)
 文件展結合台新金控大樓大廳旋轉樓梯動線，將展場空間向上拉升到七米高。創作上運用六組漸變的線性結構體與層層堆疊的布料構造出變化的透度與張力。隨階梯的爬升，創造出不斷變動的觀看視角與視覺交會點。藉由此變動的觀看方式，隱喻16組入圍作品看與被看相互關係，並與主視覺線條呼應。期待觀眾藉由身體的移動，意識到並再次檢視自己所在的座標，如同我們在理解或重新面對一段歷史，存在的時空上的距離，是否因為距離而改變了什麼？又或許在相視那一瞬間我們明白了什麼？
 <br><br>
 <b>規劃及設計團隊：陳宣誠、吳有容、陳立賢<br></b><br>
-<b>陳宣誠簡介</b><br>國立臺南藝術大學藝術博士，現為中原大學建築系專任助理教授、共感地景創作｜ArchiBlur Lab 主持建築師。長期探索在身體與地景間發展另一種重新定義建築的尺度，企圖用最真實的身體感，反覆地去體會事物最根本的價值，讓建築成為一種關於人的環境。主要的創作實踐為：《屋橋》（2015瀨戶內藝術祭家屋計劃）、《城市浮洲計畫》、馬來西亞《綠洲聚落計畫》，法國《懸山．浮橋》，《存在的邊界》（巴勒斯坦美術館典藏），以及《共感群體》（2016台北雙年展、2017夏伽雙年展）等。
+<b>陳宣誠簡介</b><br>國立臺南藝術大學藝術博士，現為中原大學建築系專任助理教授、共感地景創作｜ArchiBlur Lab 主持建築師。長期探索在身體與地景間發展另一種重新定義建築的尺度，企圖用最真實的身體感，反覆地去體會事物最根本的價值，讓建築成為一種關於人的環境。主要的創作實踐為：《屋橋》（2015瀨戶內藝術祭家屋計劃）、《城市浮洲計畫》、馬來西亞《綠洲聚落計畫》，法國《懸山．浮橋》，《存在的邊界》（巴勒斯坦美術館典藏），<span id="meeting-room-section">以及《共感群體》（2016台北雙年展、2017夏伽雙年展）等。
           </div>
       </div>
     </div>
@@ -122,7 +126,7 @@ random.shuffle(brain)
     </div>
 
     <!-- 決選委員講座 -->
-    <section class="testimonial" data-stellar-background-ratio="0.5" id="meeting-room-section">
+    <section class="testimonial" data-stellar-background-ratio="0.5" id="meeting-room-section2">
       <div class="container">
         <!-- Heading -->
         <div class="heading-block white">
@@ -169,7 +173,8 @@ random.shuffle(brain)
          </p>
         </div>
       </div>
-    </section >
+<div id="about-section"></div>
+    </section>
 </section>
 
 
@@ -257,7 +262,7 @@ $(document).ready(function(){
 
 <!-- section-2 start -->
 <section id="section-2">
-      <div class="container" id="about-section">
+      <div class="container" id="about-section2">
         <!-- Heading -->
         <div class="heading-block margin-bottom-20">
           <h2 style="font-family:微軟正黑體">關於台新藝術獎</h2><BR>
@@ -297,7 +302,7 @@ $(document).ready(function(){
           <ul class="row">
             <!-- OUR SERVICES LIST -->
             <li class="col-sm-12"> 
-                <h6 style="font-family:微軟正黑體">
+                <h6 style="font-family:微軟正黑體" id="for-this-section">
                 <a target="_blank" href="http://talks.taishinart.org.tw/award/2017/committee/final">第十六屆台新藝術獎決審委員</a> ｜
 <a target="_blank" href="http://talks.taishinart.org.tw/juries/2017">第十六屆台新藝術獎提名觀察人</a></h6>
             </li>
@@ -313,18 +318,19 @@ $(document).ready(function(){
 <!-- section-3 start -->
 <section id="section-3">
 
-      <div class="container" id="for-this-section">
+      <div class="container" id="for-this-section2">
         <!-- Heading -->
         <div class="heading-block margin-bottom-30">
           <h3 style="font-family:微軟正黑體">【我心目中的得主】</h3>
           <hr>
         </div>
         <div class="intro-small col-md-8 center-auto">
-          <p style="font-family:微軟正黑體">── 專家有專家的說法，我有我的摯愛！為心中所屬，投下鼓舞的一票！──</p>
-	  <p style="font-family:微軟正黑體">十六件入圍作品裡，哪一件最讓您印象深刻？<br>
-選出您心中的大獎得主，投您所好，還能把好禮帶回家！<br>
-5/4(五)起─6/1(五)12:00PM止<br>
-以E-Mail方式行投票，需投滿三票，作品不得重複，每個帳號均僅能進行一次投票<br>
+          <p style="font-family:微軟正黑體"> ── 專家有專家的說法，我有我的摯愛！為心中所屬，投下鼓舞的一票！──<br>
+十六件入圍作品，哪一件最讓您印象深刻？<br>
+選出您心中的三大獎得主，投您所好，還能把好禮帶回家！<br>
+<br>
+5/4(五)起─6/1(五)12:00pm止<br>
+以E-Mail進行投票，須投滿三票，作品不得重複投票，每個帳號均僅能進行一次投票<br>
 <a href="${view/portal/absolute_url}/zh-tw/event_desc">詳細辦法</a>
           </p><br>
         </div>
@@ -346,7 +352,7 @@ $(document).ready(function(){
                     <h4 style="font-size:18px"><a href="${item/getURL}" target="_blank">${python:item.getObject().voteTitle}</a></h4>
                     <p>
                       <a href="javascript:void(0)" class="img-popicon" title="" id="${item/UID}" v-on:click="poll($event)">
-<span style="font-size:18px">投我</span>
+                        <span style="font-size:18px">投票</span>
                         <i class="ion-android-checkbox-outline" style="font-size:18px; display:none"></i>
                       </a>
                       <span style="font-size:14px">累積票數:${python:item.getObject().vote}</span>
@@ -369,13 +375,13 @@ $(document).ready(function(){
 
 <script>
 var vm = new Vue({
-  el: '#for-this-section',
+  el: '#for-this-section2',
   data: {
     vote: [],
     voteMessage: 'hello world',
     alert_1: '請選擇3個項目',
     alert_2: '請勾選確認「願意請勾選」以完成投票',
-    alert_final: '投標完成，感謝您的投票',
+    alert_final: '感謝您的參與，已完成投票\n視覺藝術獎‧表演藝術獎‧年度大獎 6/2 (六) 2:00 揭曉頒布\n歡迎觀看直播\n6/5 (二) 下午於本站公告抽獎中獎名單'
   },
 
 /* 定格
@@ -454,7 +460,7 @@ if (r == true) {
                 return
             }
             if (res == 'ok'){
-                alert('感謝您的參與，已完成投票\n視覺藝術獎‧表演藝術獎‧年度大獎 6/2 揭曉頒布\n6/5 下午於本站公告抽獎中獎名單')
+                alert(vm.alert_final)
                 location.reload();
             }else{
                 alert('未知的錯誤，請稍候再試!')
@@ -515,7 +521,20 @@ function isEmail(email) {
 <section id="section-5">
       <div class="container"> 
         <!-- Heading -->
-       <div class="col-sm-12 col-md-7">
+<hr style="margin:0">
+       <div class="cola-sm-12" style="padding-left:20px">
+<a href="http://www.taishinart.org.tw/index.php" target="_blank" style="margin-right:50px">
+  <img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/footlogo1.png" style="width:20%">
+</a>
+<a target="_blank" href="http://talks.taishinart.org.tw/" style="margin-right:30px">
+  <img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/footlogo2.jpg" style="width:12%;margin-bottom:18px">
+</a>
+<a target="_blank" href="http://artsawardarchive.taishinart.org.tw/keyword#/tag/">
+<img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/footlogo3.jpg" style="width:5%">
+</a>
+       </div>
+<hr style="margin:0">
+       <div class="cola-sm-11">
           <img style="max-width:100%" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo05.jpg">
        </div>
 
