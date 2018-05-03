@@ -321,10 +321,11 @@ $(document).ready(function(){
         </div>
         <div class="intro-small col-md-8 center-auto">
           <p style="font-family:微軟正黑體">── 專家有專家的說法，我有我的摯愛！為心中所屬，投下鼓舞的一票！──</p>
-	  <p style="font-family:微軟正黑體">
-當「我心目中的得主」得獎成真，您將有機會抽獎得好禮！<br>
-─ 5/4起，投票啟動 ─<br>
-（以E-Mail進行投票，需投滿三票，作品不得重複投票，每個帳號均僅能進行一次投票）  
+	  <p style="font-family:微軟正黑體">十六件入圍作品裡，哪一件最讓您印象深刻？<br>
+選出您心中的大獎得主，投您所好，還能把好禮帶回家！<br>
+5/4(五)起─6/1(五)12:00PM止<br>
+以E-Mail方式行投票，需投滿三票，作品不得重複，每個帳號均僅能進行一次投票<br>
+<a href="${view/portal/absolute_url}/zh-tw/event_desc">詳細辦法</a>
           </p><br>
         </div>
         <!-- PORTOFLIO ITEMS FILTER -->
@@ -341,18 +342,15 @@ $(document).ready(function(){
               <div class="portfolio-image">
                   <img alt="${item/Title}" src="${item/getURL}/@@images/image/large">
                  <!-- <div class="portfolio-overlay"></div> -->
-                <div class="position-bottom poll-me" id="poll-me-${item/UID}">
-<!--                    <a href="javascript:void(0)" class="img-popicon" title="" id="${item/UID}" v-on:click="poll($event)">
-                      <i class="ion-android-checkbox-outline" style="font-size:30px"></i>
-                    </a> -->
-                    <h4><a href="${item/getURL}" target="_blank">${item/Title}</a></h4>
-                  <p>
-                    <a href="javascript:void(0)" class="img-popicon" title="" id="${item/UID}" v-on:click="poll($event)">
-                      <i class="ion-android-checkbox-outline" style="font-size:30px"></i>
-                    </a>
-
-累積票數:${python:item.getObject().vote}
-</p>
+                <div class="position-bottom poll-me" id="poll-me-${item/UID}" style="background: #0000008f; padding-top:10px">
+                    <h4 style="font-size:18px"><a href="${item/getURL}" target="_blank">${python:item.getObject().voteTitle}</a></h4>
+                    <p>
+                      <a href="javascript:void(0)" class="img-popicon" title="" id="${item/UID}" v-on:click="poll($event)">
+<span style="font-size:18px">投我</span>
+                        <i class="ion-android-checkbox-outline" style="font-size:18px; display:none"></i>
+                      </a>
+                      <span style="font-size:14px">累積票數:${python:item.getObject().vote}</span>
+                    </p>
                 </div>
               </div>
             </article>
@@ -361,6 +359,7 @@ $(document).ready(function(){
 
           <div class="text-center margin-top-50 animate fadeInUp" id="confirm-vote"
                data-wow-delay="0.4s">
+<p style="font-size:16px">本人已詳閱活動辦法並同意提供有效電子郵件信箱，作為本活動投票即獲獎通知使用；同時願意獲得主辦單位寄送藝文活動資訊。</p>
             <input type='email' id='vote-email' placeholder='請輸入有效email' style="width:250px; height:40px" v-on:keydown="confirmVote($event)">
             <a href="javascript:void(0)" class="btn btn-inverse" id='send-vote-data' v-on:click="confirmVote($event)">確認投票</a>
           </div>
@@ -393,14 +392,17 @@ var vm = new Vue({
         id = element.getAttribute('id'); //UID
         if(vm.vote.indexOf(id) > -1){
            vm.vote.pop(id)
-            $('#' + id + ' i').css('color', '')
+            $('#' + id + ' i').css('color', '').hide()
+            $('#' + id + ' span').show()
             $('#poll-me-' + id).css('opacity', '').css('bottom', '').css('margin-bottom', '')
             return;
         }
 
         if(vm.vote.length < 3){
             vm.vote.push(id);
-            $('#' + id + ' i').css('color', 'red')
+
+            $('#' + id + ' i').css('color', 'red').show()
+            $('#' + id + ' span').hide()
             $('#poll-me-' + id).css('opacity', '1').css('bottom', '0px').css('margin-bottom', '0px')
             return;
         };
@@ -419,8 +421,16 @@ var vm = new Vue({
 
         email = $('#vote-email').val()
         checkEmail = isEmail(email)
-        if ( vm.vote.length != 3) {
-            alert('請投3票作品')
+        if ( vm.vote.length == 0) {
+            alert('每個帳號限投一次，每次須投滿三票不同作品\n您已投０票，還需投３票　按鍵：返回投票')
+            return
+        }
+        if ( vm.vote.length == 1) {
+            alert('每個帳號限投一次，每次須投滿三票不同作品\n您已投１票，還需投２票　按鍵：返回投票')
+            return
+        }
+        if ( vm.vote.length == 2) {
+            alert('每個帳號限投一次，每次須投滿三票不同作品\n您已投２票，還需投１票　按鍵：返回投票')
             return
         }
         if ( ! checkEmail ) {
@@ -430,6 +440,11 @@ var vm = new Vue({
 
         vote = vm.vote[0] + ',' +  vm.vote[1] + ',' + vm.vote[2]
         data = {'email':email, 'vote':vote}
+
+// Confirm
+var txt;
+var r = confirm("本人已詳閱活動辦法並同意提供有效電子郵件信箱，\n作為本活動投票即獲獎通知使用；\n同時願意獲得主辦單位寄送藝文活動資訊。\n同意請點選確認鍵繼續");
+if (r == true) {
         jQuery.post(
             '${python:view.portal.absolute_url()}/@@vote',
             data=data
@@ -439,7 +454,7 @@ var vm = new Vue({
                 return
             }
             if (res == 'ok'){
-                alert('已完成投票，感謝您的參與')
+                alert('感謝您的參與，已完成投票\n視覺藝術獎‧表演藝術獎‧年度大獎 6/2 揭曉頒布\n6/5 下午於本站公告抽獎中獎名單')
                 location.reload();
             }else{
                 alert('未知的錯誤，請稍候再試!')
@@ -449,6 +464,12 @@ var vm = new Vue({
             alert('未知的錯誤，請稍候再試!')
             location.reload();
         })
+
+
+} else {
+    alert("已取消本次投票.")
+}
+
     }
   }
 });
@@ -473,7 +494,7 @@ function isEmail(email) {
 <!-- section-4 start -->
 <section id="section-4">
       <div class="container">
-        <div class="heading-block">
+        <div class="heading-block" id="message_block">
           <h3 style="font-family:微軟正黑體">留言區</h3><BR><BR><BR>
           <P style="font-family:微軟正黑體; font-size:16px; line-height:26px">
 如在本屆16組入圍作品之外，您尚有心目中的年度佳作卻未入圍之遺憾，歡迎您針對本屆未入圍之遺珠作品，在留言區表達您的看法。凡在留言區寫下心目中遺珠作品名稱及理由，我們就送您ARTalks票夾。
