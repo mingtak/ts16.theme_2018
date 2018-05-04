@@ -1,6 +1,18 @@
 jQuery( document ).ready(function( $ ) {
 "use strict"
 /*-----------------------------------------------------------------------------------*/
+/*    RWD Menu                                                                       */
+/*-----------------------------------------------------------------------------------*/
+$(document).ready(function(){
+    $('ul.nav li').click(function(){
+        $('div.navbar-collapse.collapse.in').attr('class', 'navbar-collapse collapse')
+        $('button.navbar-toggle').attr('class', 'navbar-toggle collapsed')
+    })
+
+})
+
+
+/*-----------------------------------------------------------------------------------*/
 /* 	LOADER
 /*-----------------------------------------------------------------------------------*/
 $( window ).on( "load" , function() {
