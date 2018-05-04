@@ -229,12 +229,27 @@ The selection of the Taishin Arts Award includes the system of appointed nominat
 
 <!-- section-5 start -->
 <section id="section-5">
-      <div class="container"> 
+      <div class="container">
         <!-- Heading -->
-       <div class="col-sm-12 col-md-7">
-          <img style="max-width:100%" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo05.jpg">    
+<hr style="margin:0">
+       <div class="cola-sm-12" style="padding-left:20px">
+<a href="http://www.taishinart.org.tw/index.php" target="_blank" style="margin-right:50px">
+  <img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/footlogo1.png" style="width:20%">
+</a>
+<a target="_blank" href="http://talks.taishinart.org.tw/" style="margin-right:30px">
+  <img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/footlogo2.jpg" style="width:12%;margin-bottom:18px">
+</a>
+<a target="_blank" href="http://artsawardarchive.taishinart.org.tw/keyword#/tag/">
+<img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/footlogo3.jpg" style="width:5%">
+</a>
        </div>
+<hr style="margin:0">
+       <div class="cola-sm-11">
+          <img style="max-width:100%" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo05.jpg">
+       </div>
+
       </div>
+
 </section>
 <!-- section-5 end -->
 
