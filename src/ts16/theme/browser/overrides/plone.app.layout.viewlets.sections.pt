@@ -40,7 +40,7 @@ lang = api.portal.get_current_language()
                 </ul>
 -->
           </li>
-          <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#document-show-section"><span style="font-family:微軟正黑體">文件展</span></a></li>
+          <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#document-show-section"><span style="font-family:微軟正黑體">意象展</span></a></li>
           <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#meeting-room-section"><span style="font-family:微軟正黑體">決選委員講座</span></a></li>
           <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#about-section"><span style="font-family:微軟正黑體">關於台新藝術獎</span></a></li>
           <li class="dropdown"> <a href="${portal/absolute_url}/${lang}#for-this-section"><span style="font-family:微軟正黑體">我心目中的得主</span></a></li>
