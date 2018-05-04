@@ -113,7 +113,8 @@ jQuery('.tp-banner').show().revolution({
 /*-----------------------------------------------------------------------------------*/
 $('.images-slider').flexslider({
   animation: "fade",
-  controlNav: "thumbnails"
+  controlNav: "thumbnails",
+  slideshowSpeed: 3000
 });
 /*-----------------------------------------------------------------------------------*/
 /* 	SLIDER REVOLUTION
