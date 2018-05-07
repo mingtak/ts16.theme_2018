@@ -522,17 +522,21 @@ function isEmail(email) {
       <div class="container"> 
         <!-- Heading -->
 <hr style="margin:0">
-       <div class="cola-sm-12" style="padding-left:20px">
-<a href="http://www.taishinart.org.tw/index.php" target="_blank" style="margin-right:50px">
-  <img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/footlogo1.png" style="width:20%">
+
+
+       <div class="col-sm-12 foot-logo">
+<a href="http://www.taishinart.org.tw/index.php" target="_blank">
+  <img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/footlogo1.png">
 </a>
 <a target="_blank" href="http://talks.taishinart.org.tw/" style="margin-right:30px">
-  <img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/footlogo2.jpg" style="width:12%;margin-bottom:18px">
+  <img class="short" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/footlogo2.jpg" style="width:12%;margin-bottom:18px">
 </a>
 <a target="_blank" href="http://artsawardarchive.taishinart.org.tw/keyword#/tag/">
-<img src="${view/portal/absolute_url}/++theme++artaward16/images/logo/footlogo3.jpg" style="width:5%">
+  <img class="short-2" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/footlogo3.jpg" style="width:5%">
 </a>
        </div>
+
+
 <hr style="margin:0">
        <div class="cola-sm-11">
           <img style="max-width:100%" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/logo05.jpg">
