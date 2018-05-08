@@ -1,3 +1,11 @@
+.template-cover_view .testimonial a:link {
+    color: #333;
+}
+
+.template-cover_view .testimonial a.booking:link {
+    color: #f00;
+}
+
 .cover-3d-show {
     display:none;
 }

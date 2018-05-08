@@ -155,7 +155,7 @@ random.shuffle(brain)
 <span style="font-size:50px"></span>
 鄧樹榮先生是香港著名導演及戲劇教育家，現任「鄧樹榮戲劇工作室」藝術總監，擅於將西方的戲劇用東方的演繹方式，將作品帶往國際舞台。他如何看中、港、澳、台劇場創作的趨勢？近年來亞洲劇場與全球表演藝術發展的關係，以及劇場教育該如何在華語社會繼續推進？<br>
 <br><br>
-※本活動免費參加，請先上網報名 <a target="_blank" href="http://www.taishinart.org.tw/chinese/3_event/detail.php?ID=615">立即報名</a>
+※本活動免費參加，請先上網報名 <a target="_blank" href="http://www.taishinart.org.tw/chinese/3_event/detail.php?ID=615" class="booking">立即報名</a>
          </p>
         </div>
         <div class="col-sm-6" style="padding-left: 40px">
@@ -174,7 +174,7 @@ random.shuffle(brain)
 陳泰松／台新銀行文化藝術基金會藝術總監<BR><br>
         本屆台新藝術獎歷經九位提名觀察人全年度遴選推薦的16組入圍作品，將由七位海內外專業人士組成的決選委員會議連續數天討論後，於6月2日頒獎典禮現場揭曉三大獎項得主。在得獎名單揭曉後的次日，特別安排四位國內委員與大眾對話，分享評選觀點、跨領域的評選經驗，進而剖析近年台灣當代藝術現況、趨勢與走向。<br>
 <br><br>
-        ※本活動免費參加，請先上網報名 <a target="_blank" href="http://www.taishinart.org.tw/chinese/3_event/detail.php?ID=615">立即報名</a>
+        ※本活動免費參加，請先上網報名 <a target="_blank" href="http://www.taishinart.org.tw/chinese/3_event/detail.php?ID=615" class="booking">立即報名</a>
          </p>
         </div>
       </div>
@@ -357,7 +357,7 @@ $(document).ready(function(){
                     <h4 style="font-size:18px"><a href="${item/getURL}" target="_blank">${python:item.getObject().voteTitle}</a></h4>
                     <p>
                       <a href="javascript:void(0)" class="img-popicon" title="" id="${item/UID}" v-on:click="poll($event)">
-                        <span style="font-size:18px">投票</span>
+                        <span style="font-size:18px; color:#f00">投票</span>
                         <i class="ion-android-checkbox-outline" style="font-size:18px; display:none"></i>
                       </a>
                       <span style="font-size:14px">累積票數:${python:item.getObject().vote}</span>
