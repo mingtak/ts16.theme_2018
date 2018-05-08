@@ -116,6 +116,11 @@ random.shuffle(brain)
 <b>規劃及設計團隊：陳宣誠、吳有容、陳立賢<br></b><br>
 <b>陳宣誠簡介</b><br>國立臺南藝術大學藝術博士，現為中原大學建築系專任助理教授、共感地景創作｜ArchiBlur Lab 主持建築師。長期探索在身體與地景間發展另一種重新定義建築的尺度，企圖用最真實的身體感，反覆地去體會事物最根本的價值，讓建築成為一種關於人的環境。主要的創作實踐為：《屋橋》（2015瀨戶內藝術祭家屋計劃）、《城市浮洲計畫》、馬來西亞《綠洲聚落計畫》，法國《懸山．浮橋》，《存在的邊界》（巴勒斯坦美術館典藏），<span id="meeting-room-section">以及《共感群體》（2016台北雙年展、2017夏伽雙年展）等。
           </div>
+
+<div class="cover-3d-show">
+    <img src="${view/portal/absolute_url}/++theme++artaward16/images/about-img-bg.jpg" style="width:100%">
+</div>
+
       </div>
     </div>
     <!-- Counter -->

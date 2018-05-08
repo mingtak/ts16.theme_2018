@@ -1,3 +1,7 @@
+.cover-3d-show {
+    display:none;
+}
+
 div.foot-logo {
     padding-left:20px;
 }
@@ -17,6 +21,7 @@ div.foot-logo a {
         width:8% !important;
     }
 }
+
 @media (min-width: 768px){
     div.foot-logo a img {
         width:20%;
@@ -30,6 +35,18 @@ div.foot-logo a {
 
 .cd-top {
     border-radius: 0%;
+}
+
+@media (max-width: 767px){
+    .cd-top {
+        display: inline-block;
+    }
+    .cover-3d-show {
+        display:initial;
+    }
+    .cover-3d-show img {
+        margin-top: 20px;
+    }
 }
 
 .template-cover_view .poll-me {
