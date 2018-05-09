@@ -336,7 +336,7 @@ $(document).ready(function(){
 <br>
 5/4(五)起─6/1(五)12:00pm止<br>
 以E-Mail進行投票，須投滿三票，作品不得重複投票，每個帳號均僅能進行一次投票<br>
-<a href="${view/portal/absolute_url}/zh-tw/event_desc">詳細辦法</a>
+<a href="${view/portal/absolute_url}/zh-tw/event_desc" style="color:#f00">詳細辦法</a>
           </p><br>
         </div>
         <!-- PORTOFLIO ITEMS FILTER -->
