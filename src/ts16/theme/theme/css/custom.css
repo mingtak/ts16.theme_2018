@@ -1,3 +1,7 @@
+.template-cover_view .position-bottom.poll-me h4 {
+    margin-bottom: 12px;
+}
+
 .template-cover_view .testimonial a:link {
     color: #333;
 }
