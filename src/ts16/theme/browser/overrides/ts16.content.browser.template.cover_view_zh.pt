@@ -158,7 +158,7 @@ random.shuffle(brain)
 ※本活動免費參加，請先上網報名 <a target="_blank" href="http://www.taishinart.org.tw/chinese/3_event/detail.php?ID=615" class="booking">立即報名</a>
          </p>
         </div>
-        <div class="col-sm-6" style="padding-left: 40px">
+        <div class="col-sm-6" id="speech2">
           <p style="font-family:微軟正黑體;color:#fff; font-size:20px">決選委員講座（二）</p>
           <p style="font-family:微軟正黑體;color:#000; font-size:18px"><b>評什麼？—台新藝術獎得獎作品之我見</b></p>
           <p style="font-family:微軟正黑體;color:#fff; font-size:16px">

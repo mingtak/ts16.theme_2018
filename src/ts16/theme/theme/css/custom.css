@@ -1,3 +1,15 @@
+#speech2 {
+    padding-left: 40px;
+}
+
+@media (max-width: 768px){
+    #speech2 {
+        padding-left: 15px;
+        margin-top: 80px;
+    }
+}
+
+
 .template-cover_view .position-bottom.poll-me h4 {
     margin-bottom: 12px;
 }
@@ -47,6 +59,8 @@ div.foot-logo a {
 
 .cd-top {
     border-radius: 0%;
+    width: initial;
+    height: initial;
 }
 
 @media (max-width: 767px){
