@@ -539,6 +539,10 @@ function isEmail(email) {
 <a target="_blank" href="http://artsawardarchive.taishinart.org.tw/keyword#/tag/">
   <img class="short-2" src="${view/portal/absolute_url}/++theme++artaward16/images/logo/footlogo3.jpg" style="width:5%">
 </a>
+<a target="_blank" href="https://www.facebook.com/TAISHINART/">
+  <img class="short-3" src="${view/portal/absolute_url}/++theme++artaward16/images/facebook.png" style="width:8%">
+</a>
+
        </div>
 
 

@@ -44,6 +44,9 @@ div.foot-logo a {
     div.foot-logo a img.short-2 {
         width:8% !important;
     }
+    div.foot-logo a img.short-3 {
+        width:25% !important;
+    }
 }
 
 @media (min-width: 768px){
