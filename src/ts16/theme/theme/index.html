@@ -155,12 +155,14 @@
           <!-- SLIDE  -->
           <div data-transition="random" data-slotamount="7"
               data-masterspeed="300"  data-saveperformance="off"
-              class="col-md-5 col-sm-12 center-auto1">
+              class="col-md-5 col-sm-12 center-auto1" id="ytplayer">
             <!-- MAIN IMAGE -->
-            <iframe src="https://www.youtube.com/embed/STuFB2bIJBs?autoplay=1&rel=0"
+<!--            <iframe id="home-video"
+                    src="https://www.youtube.com/embed/STuFB2bIJBs?autoplay=1&rel=0"
                     frameborder="0" allowfullscreen=""
                     style="display:block;border: none; padding:0; margin:0; width:100%; height:300px" alt="slider"
                     data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"></iframe>
+-->
           </div>
         
           <div data-transition="random" data-slotamount="7"
@@ -626,11 +628,41 @@
 </script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ad7ffc381cd3604"></script>
+
+<script async src="https://www.youtube.com/iframe_api"></script>
+<script>
+function onYouTubeIframeAPIReady() {
+  var player;
+  player = new YT.Player('ytplayer', {
+    videoId: 'STuFB2bIJBs', // YouTube 影片ID
+    playerVars: {
+      autoplay: 1,        // Auto-play the video on load
+      controls: 1,        // Show pause/play buttons in player
+      showinfo: 1,        // Hide the video title
+      modestbranding: 1,  // Hide the Youtube Logo
+      playlist: 'STuFB2bIJBs',
+      loop: 1,            // Run the video in a loop
+      fs: 0,              // Hide the full screen button
+      cc_load_policy: 0, // Hide closed captions
+      iv_load_policy: 3,  // Hide the Video Annotations
+      autohide: 0,         // Hide video controls when playing
+      rel: 0
+    },
+    events: {
+      onReady: function(e) {
+        e.target.mute();
+      }
+    }
+  });
+ }
+</script>
 <script>
 $(document).ready(function() {  
+
+
     $(document).get(0).oncontextmenu = function() {
         return false;
-    }; 
+    };
 });
 </script>
 
