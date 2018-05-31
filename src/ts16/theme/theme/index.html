@@ -632,9 +632,18 @@
 <script async src="https://www.youtube.com/iframe_api"></script>
 <script>
 function onYouTubeIframeAPIReady() {
+  var liveTime = new Date("2018/6/2 10:00:00");
+  var nowTime = new Date();
+  video_id = 'STuFB2bIJBs';
+  if(nowTime > liveTime){
+      video_id = 'GLGFbno9_zc'
+  }else{
+      video_id = 'STuFB2bIJBs'
+  }
+
   var player;
   player = new YT.Player('ytplayer', {
-    videoId: 'STuFB2bIJBs', // YouTube 影片ID
+    videoId: video_id, // YouTube 影片ID
     playerVars: {
       autoplay: 1,        // Auto-play the video on load
       controls: 1,        // Show pause/play buttons in player
