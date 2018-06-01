@@ -330,7 +330,7 @@ $(document).ready(function(){
           <hr>
         </div>
         <div class="intro-small col-md-8 center-auto">
-          <p style="font-family:微軟正黑體"> ── 專家有專家的說法，我有我的摯愛！為心中所屬，投下鼓舞的一票！──<br>
+          <p style="font-family:微軟正黑體"> ── 專家有專家的說法，我有我的摯愛！為心中所屬，投下鼓舞的一票！<span style="color:red">(活動已截止)</span>──<br>
 十六件入圍作品，哪一件最讓您印象深刻？<br>
 選出您心中的三大獎得主，投您所好，還能把好禮帶回家！<br>
 <br>
@@ -356,10 +356,11 @@ $(document).ready(function(){
                 <div class="position-bottom poll-me" id="poll-me-${item/UID}" style="background: #0000008f; padding-top:10px">
                     <h4 style="font-size:18px"><a href="${item/getURL}" target="_blank">${python:item.getObject().voteTitle}</a></h4>
                     <p>
-                      <a href="javascript:void(0)" class="img-popicon" title="" id="${item/UID}" v-on:click="poll($event)">
+<!--                      <a href="javascript:void(0)" class="img-popicon" title="" id="${item/UID}" v-on:click="poll($event)">
                         <span style="font-size:18px; color:#f00">投票</span>
                         <i class="ion-android-checkbox-outline" style="font-size:18px; display:none"></i>
                       </a>
+-->
                       <span style="font-size:14px">累積票數:${python:item.getObject().vote}</span>
                     </p>
                 </div>
@@ -367,14 +368,14 @@ $(document).ready(function(){
             </article>
           </div>
         </div>
-
+<!--
           <div class="text-center margin-top-50 animate fadeInUp" id="confirm-vote"
                data-wow-delay="0.4s">
 <p style="font-size:16px">本人已詳閱活動辦法並同意提供有效電子郵件信箱，作為本活動投票即獲獎通知使用；同時願意獲得主辦單位寄送藝文活動資訊。</p>
             <input type='email' id='vote-email' placeholder='請輸入有效email' style="width:250px; height:40px" v-on:keydown="confirmVote($event)">
             <a href="javascript:void(0)" class="btn btn-inverse" id='send-vote-data' v-on:click="confirmVote($event)">確認投票</a>
           </div>
-
+-->
 
 <script src="${view/portal/absolute_url}/++theme++artaward16/js/vue.min.js"></script>
 
