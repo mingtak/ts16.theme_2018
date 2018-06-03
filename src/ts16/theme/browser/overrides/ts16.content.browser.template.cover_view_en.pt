@@ -46,7 +46,7 @@ random.shuffle(brain)
 ?>
 
 <tal:item repeat="item brain">
-          <div class="cbp-item portfolio-item ${python:item.Subject[0]}">
+          <div class="cbp-item portfolio-item ${python:' '.join(item.Subject)}">
             <article>
               <div class="portfolio-image"> <img alt="${python:item.getObject().en_title.split('\n')[0]}" src="${item/getURL}/@@images/image/large">
                   <div class="portfolio-overlay"></div>
