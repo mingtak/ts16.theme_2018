@@ -33,7 +33,7 @@
           <li><a class="active" href="#." data-filter="*">All Works</a></li>
           <li><a href="#." data-filter=".表演藝術"><span style="font-family:微軟正黑體">Performing Arts Works</span></a></li>
           <li><a href="#." data-filter=".視覺藝術"><span style="font-family:微軟正黑體">Visual Arts Works</span></a></li>
-<!--          <li><a href="#." data-filter=".藝冠榜"><span style="font-family:微軟正黑體">Previous Winners</span></a></li> -->
+          <li><a href="#." data-filter=".藝冠榜"><span style="font-family:微軟正黑體">Previous Winners</span></a></li>
         </ul>
 
         <!-- Item Start -->

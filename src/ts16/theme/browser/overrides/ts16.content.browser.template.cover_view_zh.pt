@@ -64,7 +64,7 @@
           <li><a class="active" href="#." data-filter="*">All</a></li>
           <li><a href="#." data-filter=".表演藝術"><span style="font-family:微軟正黑體">表演藝術</span></a></li>
           <li><a href="#." data-filter=".視覺藝術"><span style="font-family:微軟正黑體">視覺藝術</span></a></li>
-<!--          <li><a href="#." data-filter=".藝冠榜"><span style="font-family:微軟正黑體">藝冠榜</span></a></li> -->
+          <li><a href="#." data-filter=".藝冠榜"><span style="font-family:微軟正黑體">藝冠榜</span></a></li>
         </ul>
 
         <!-- Item Start -->
